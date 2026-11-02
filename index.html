@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../img/MyLogo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/MyLogo.png" type="image/png">
 
-    <title>Portifólio do João Carlos</title>
+    <title id="tituloPagina">João Carlos | Portfolio</title>
 </head>
 <body>
 
     <header>
-        <img src="../img/logoSenai.png" alt="" class="logoSenai">
+        <img src="./img/logoSenai.png" alt="Logo SENAI" class="logoSenai">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="navHome">Home</a></li>
+            <li><a href="#about" id="navAbout">About</a></li>
+            <li><a href="#works" id="navWorks">Works</a></li>
+            <li><a href="#contact" id="navContact">Contact</a></li>
         </ul>
-        <img src="../img/logo2RP.png" alt="" class="logo2RP">
+        <div class="areaHeaderDireita">
+            <button class="botaoIdioma" id="botaoIdioma" onclick="alternarIdioma()">PT-BR</button>
+            <img src="./img/logo2RP.png" alt="Logo 2RP Net" class="logo2RP">
+        </div>
     </header>
 
     <div class="espacoEmbaixoDoHeader"></div>
@@ -26,12 +29,12 @@
     <main class="pg1">
 
         <section class="ladoTitulo">
-            <p>Olá, sou o João Carlos,</p>
-            <h1>Full Stack <br> Developer</h1>
-            <p class="textTT">Desenvolvedor focado em Backend, Engenharia de Dados e construção de aplicações escaláveis.</p>
+            <p id="saudacaoTopo">Hello, I'm João Carlos,</p>
+            <h1 id="cargoTopo">Full Stack <br> Developer</h1>
+            <p class="textTT" id="descricaoTopo">Developer focused on Backend, Data Engineering, and building scalable, resilient applications. Experienced in system integration, relational databases, and transforming complex data into efficient digital solutions.</p>
             <section class="partezinhaTopo">
-                <a href="#contact"><button>Entre em contato</button></a>
-                <a href="https://www.linkedin.com/"><div class="iconeLinkedinTopo"><img src="../img/linkedinTopo.png" alt=""></div></a>
+                <a href="#contact"><button id="botaoContatoTopo">Get in touch</button></a>
+                <a href="https://www.linkedin.com/" target="_blank"><div class="iconeLinkedinTopo"><img src="./img/linkedinTopo.png" alt="LinkedIn"></div></a>
 
                 <div class="espacoAncora" id="about"></div>
 
@@ -49,54 +52,54 @@
     <main class="pg2">
 
         <section class="topoPg2">
-            <h1>About</h1>
+            <h1 id="tituloSobre">About</h1>
             <div class="tracao"></div>
         </section>
 
         <section class="textoSobre">
 
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas pelo SENAI. Antes da graduação, concluí o curso técnico em Desenvolvimento de Sistemas, onde tive meu primeiro contato mais aprofundado com programação, lógica e desenvolvimento de aplicações, participando de projetos práticos que ajudaram a desenvolver minha base na área de tecnologia.
+            <p id="paragrafoSobre">I am currently pursuing a degree in Systems Analysis and Development at SENAI. Prior to my undergraduate studies, I completed a Technical Degree in Systems Development at SENAI, where I built a strong foundation in programming logic, software architecture, object-oriented programming, and full-stack application development through hands-on, collaborative projects.
 
 <br><br>
 
-Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando com dados, integração de sistemas e organização de informações. Tenho grande interesse em desenvolvimento backend, bancos de dados e engenharia de dados, buscando sempre evoluir tecnicamente e aprender novas ferramentas para fortalecer minha carreira na área de tecnologia.</p>
+Currently, I work as a Data Engineering Intern at 2RP Net, focusing on data pipelines, systems integration, data modeling, and information governance. Passionate about Backend Development, Relational Databases, and Data Engineering, I am constantly expanding my technical repertoire with modern tools like Java, Spring Boot, and Docker to deliver high-performance, scalable software solutions.</p>
 
         </section>
 
         <section class="boxCards">
             <section class="tTopo">
-                <h3>Technical Skills</h3>
+                <h3 id="tituloSkills">Technical Skills</h3>
             <div class="tracinho"></div>
             </section>
             <section class="cardsSkills">
 
                 <div class="card">
-                    <div class="imagemSkill"><img class="skill1" src="../img/skills/html.png" alt=""></div>
+                    <div class="imagemSkill"><img class="skill1" src="./img/skills/html.png" alt="HTML"></div>
                     <p>HTML</p>
                 </div>
 
                 <div class="card">
-                    <div class="imagemSkill"><img class="skill2" src="../img/skills/css.png" alt=""></div>
+                    <div class="imagemSkill"><img class="skill2" src="./img/skills/css.png" alt="CSS"></div>
                     <p>CSS</p>
                 </div>
 
                 <div class="card">
-                    <div class="imagemSkill"><img class="skill3" src="../img/skills/js.png" alt=""></div>
+                    <div class="imagemSkill"><img class="skill3" src="./img/skills/js.png" alt="JavaScript"></div>
                     <p>JavaScript</p>
                 </div>
 
                 <div class="card">
-                    <div class="imagemSkill"><img class="skill4" src="../img/skills/git.png" alt=""></div>
+                    <div class="imagemSkill"><img class="skill4" src="./img/skills/git.png" alt="GitHub"></div>
                     <p>GitHub</p>
                 </div>
 
                 <div class="card">
-                    <div class="imagemSkill"><img class="skill5" src="../img/skills/java.png" alt=""></div>
+                    <div class="imagemSkill"><img class="skill5" src="./img/skills/java.png" alt="Java"></div>
                     <p>Java</p>
                 </div>
 
                 <div class="card">
-                    <div class="imagemSkill"><img class="skill6" src="../img/skills/docker.png" alt=""></div>
+                    <div class="imagemSkill"><img class="skill6" src="./img/skills/docker.png" alt="Docker"></div>
                     <p>Docker</p>
                 </div>
 
@@ -112,18 +115,12 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
     <main class="pg3">
 
         <section class="topoPg3">
-            <h1>Works</h1>
+            <h1 id="tituloWorks">Works</h1>
         </section>
 
         <section class="textoSobre2">
 
-            <p>Durante meu curso técnico em Desenvolvimento de Sistemas no SENAI, tive a oportunidade de 
-                desenvolver diversos projetos práticos que contribuíram para a construção da minha base na 
-                área de tecnologia. Ao longo da formação, trabalhei em diferentes tipos de aplicações, como 
-                um sistema de gerenciamento de estacionamento, uma landing page para um evento de tecnologia, 
-                um site para divulgação de uma campanha social e também infográficos informativos contra o 
-                trabalho infantil. Esses projetos me permitiram aplicar na prática conceitos de programação, 
-                desenvolvimento web, organização de sistemas e trabalho em equipe.
+            <p id="paragrafoWorks">Throughout my academic journey at SENAI and personal studies, I have developed a diverse range of practical projects that strengthened my technical problem-solving and engineering skills. From full-stack management systems and RESTful APIs to interactive landing pages and educational platforms, each project allowed me to apply best practices in clean code, database modeling, responsive web design, and agile teamwork. Below are some of the key projects I have built.
             </p>
             
         </section>
@@ -141,8 +138,8 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
                     <section class="imagemFundoCardExp" id="if1"></section>
                     
                     <section class="textosCardExp">
-                        <h2>Sistema AquaBalance</h2>
-                        <p>O Aqua Balance é um sistema que monitora e controla o uso da água para promover economia, eficiência e sustentabilidade.</p>
+                        <h2 id="tituloCard1">AquaBalance System</h2>
+                        <p id="descCard1">AquaBalance is a full-stack smart water management platform designed to monitor, analyze, and control consumption in real time—promoting resource conservation, operational efficiency, and environmental sustainability through interactive dashboards.</p>
                         <section class="areaTechUtilizadas">
 
                             <div class="techUtilizada">HTML | CSS | JS</div>
@@ -154,7 +151,7 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
                         </section>
                         <section class="areaBotoesCard">
 
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/Back-End---AquaBalance.git" target="_blank">View Project</a></button>
+                            <button class="verProjeto"><a href="https://github.com/JCReis12/Back-End---AquaBalance.git" target="_blank" class="linkVerProjeto">View Project</a></button>
                         
                         </section>
                     </section>
@@ -171,18 +168,18 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
                     <section class="imagemFundoCardExp" id="if2"></section>
                     
                     <section class="textosCardExp">
-                        <h2>Landing Page Bibliotech</h2>
-                        <p>O Bibliotech é uma landing page de biblioteca que apresenta livros para aluguel e divulga eventos culturais.</p>
+                        <h2 id="tituloCard2">Bibliotech Landing Page</h2>
+                        <p id="descCard2">Bibliotech is a modern digital library platform and landing page designed to showcase book catalogs for rental, streamline reader access, and promote local literary and cultural events with an intuitive user interface.</p>
                         <section class="areaTechUtilizadas">
 
                             <div class="techUtilizada">HTML</div>
-                            <div class="techUtilizada">CCS</div>
+                            <div class="techUtilizada">CSS</div>
                             <div class="techUtilizada">JavaScript</div>
 
                         </section>
                         <section class="areaBotoesCard">
 
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/ModeloBibli.git">View Project</a></button>
+                            <button class="verProjeto"><a href="https://github.com/JCReis12/ModeloBibli.git" target="_blank" class="linkVerProjeto">View Project</a></button>
                         
                         </section>
                     </section>
@@ -198,18 +195,18 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
                     <section class="imagemFundoCardExp" id="if3"></section>
                     
                     <section class="textosCardExp">
-                        <h2>Projeto SESI Estudos</h2>
-                        <p>O Sesi Estudos é um sistema que ajuda alunos a acompanhar provas, tarefas e conteúdos, tudo de forma prática na palma da mão.</p>
+                        <h2 id="tituloCard3">SESI Estudos Project</h2>
+                        <p id="descCard3">SESI Estudos is an educational web application created to help students organize their academic routine—allowing them to track exams, assignments, study materials, and schedules seamlessly in one centralized hub.</p>
                         <section class="areaTechUtilizadas">
 
                             <div class="techUtilizada">HTML</div>
-                            <div class="techUtilizada">CCS</div>
+                            <div class="techUtilizada">CSS</div>
                             <div class="techUtilizada">JavaScript</div>
 
                         </section>
                         <section class="areaBotoesCard">
 
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/Projeto-SESI-ESTUDOS.git">View Project</a></button>
+                            <button class="verProjeto"><a href="https://github.com/JCReis12/Projeto-SESI-ESTUDOS.git" target="_blank" class="linkVerProjeto">View Project</a></button>
             
                         
                         </section>
@@ -227,12 +224,12 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
                     <section class="imagemFundoCardExp" id="if4"></section>
                     
                     <section class="textosCardExp">
-                        <h2>Catholic Site</h2>
-                        <p>O Catholic Site é um site em desenvolvimento que reúne orações e recursos para facilitar a prática da fé no dia a dia.</p>
+                        <h2 id="tituloCard4">Catholic Site</h2>
+                        <p id="descCard4">Catholic Site is a full-stack web platform under active development that brings together traditional prayers, liturgical readings, and spiritual resources to support and enrich daily faith practice.</p>
                         <section class="areaTechUtilizadas">
 
                             <div class="techUtilizada">HTML</div>
-                            <div class="techUtilizada">CCS</div>
+                            <div class="techUtilizada">CSS</div>
                             <div class="techUtilizada">JavaScript</div>
                             <div class="techUtilizada">Spring Boot</div>
                             <div class="techUtilizada">MySQL</div>
@@ -240,7 +237,7 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
                         </section>
                         <section class="areaBotoesCard">
 
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/catholic-2.0.git">View Project</a></button>
+                            <button class="verProjeto"><a href="https://github.com/JCReis12/catholic-2.0.git" target="_blank" class="linkVerProjeto">View Project</a></button>
                         
                         </section>
                     </section>
@@ -251,21 +248,6 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
 
 
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         </section>
 
@@ -279,28 +261,28 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
 
                 <div class="cardCont" id="cardGit">
                     <a href="https://github.com/JCReis12" target="_blank">
-                        <div class="imagemFooter" id="i1"><img src="../img/footer/git.png" alt=""></div>
-                        <h2>Git Hub</h2>
+                        <div class="imagemFooter" id="i1"><img src="./img/footer/git.png" alt="GitHub"></div>
+                        <h2>GitHub</h2>
                     </a>
                 </div>
 
                 <div class="cardCont" id="cardLinkedin">
                     <a href="https://br.linkedin.com/" target="_blank">
-                        <div class="imagemFooter" id="i2"><img src="../img/footer/linkedin.png" alt=""></div>
-                        <h2>Linkedin</h2>
+                        <div class="imagemFooter" id="i2"><img src="./img/footer/linkedin.png" alt="LinkedIn"></div>
+                        <h2>LinkedIn</h2>
                     </a>
                 </div>
 
                 <div class="cardCont" id="cardEmail">
                     <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox?compose=GTvVlcSHvbPNRfvRLMqXSCDgfwFNgJDvSwFCFKLrwTLWQXRrpLlsBdghXKgwVlQMKdXXcSmnsbfDr" target="_blank">
-                        <div class="imagemFooter" id="i3"><img src="../img/footer/email.png" alt=""></div>
+                        <div class="imagemFooter" id="i3"><img src="./img/footer/email.png" alt="Email"></div>
                         <h2>Email</h2>
                     </a>
                 </div>
 
                 <div class="cardCont" id="cardInsta">
                     <a href="https://www.instagram.com/jota_c_12/" target="_blank">
-                        <div class="imagemFooter" id="i4"><img src="../img/footer/insta.png" alt=""></div>
+                        <div class="imagemFooter" id="i4"><img src="./img/footer/insta.png" alt="Instagram"></div>
                         <h2>Instagram</h2>
                     </a>
                 </div>
@@ -310,26 +292,26 @@ Atualmente atuo como estagiário em Engenharia de Dados na 2RP Net, trabalhando 
         </section>
 
         <section class="ladoDireitoFooter">
-            <h1>Entre em contato</h1>
+            <h1 id="tituloContatoFooter">Get in touch</h1>
             <section class="formulario">
-                <label for="#nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome">
+                <label for="nome" id="labelNome">Name:</label>
+                <input type="text" id="nome" placeholder="Enter your name">
 
-                <label for="#email">E-mail:</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail">
+                <label for="email" id="labelEmail">E-mail:</label>
+                <input type="email" id="email" placeholder="Enter your e-mail">
 
-                <label for="mensagem">Deixe sua mensagem:</label>
-                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <label for="mensagem" id="labelMensagem">Leave your message:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Enter your message"></textarea>
 
                 <div class="botaoForm">
-                    <button id="enviar" onclick="enviar()">Enviar</button>
+                    <button id="enviar" onclick="enviar()">Send Message</button>
                 </div>
             </section>
         </section>
 
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
     
 </body>
 </html>
