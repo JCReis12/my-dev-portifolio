@@ -19,6 +19,7 @@ header{
     height: 15vh;
     width: 100vw;
     position: fixed;
+    z-index: 1000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,6 +32,29 @@ header .logoSenai{
 
 header .logo2RP{
     width: 8rem;
+}
+
+.areaHeaderDireita{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botaoIdioma{
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #3b8be1;
+    background-color: #000000;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #3b8be1;
+    transition: 0.4s;
+}
+
+.botaoIdioma:hover{
+    background-color: #246cb870;
+    color: white;
+    border-color: white;
 }
 
 ul{
@@ -62,6 +86,8 @@ li a:hover{
 
 .textTT{
     margin-block: 2vh;
+    width: 85%;
+    line-height: 1.6;
 }
 
 .ladoTitulo{
@@ -165,7 +191,8 @@ a{
 }
 
 .pg2{
-    height: 127vh;
+    min-height: 127vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,6 +218,7 @@ a{
     width: 80vw;
     display: flex;
     text-align: justify;
+    line-height: 1.7;
     margin-bottom: 15vh;
 }
 
@@ -269,7 +297,8 @@ a{
 
 .pg3{
     padding-top: 20vh;
-    height: 230vh;
+    padding-bottom: 12vh;
+    min-height: 230vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -295,6 +324,7 @@ a{
     width: 70vw;
     display: flex;
     text-align: justify;
+    line-height: 1.7;
     flex-direction: column;
     align-items: center;
 }
@@ -305,7 +335,6 @@ a{
 
 .experience{
     margin-top: 15vh;
-    height: 300vh;
     gap: 30px;
     display: flex;
     align-items: center;
@@ -323,15 +352,17 @@ a{
 .cardExp{
     background-color: black;
     width: 39vw;
-    height: 62vh;
+    min-height: 64vh;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .imagemFundoCardExp{
     width: 100%;
-    height: 45%;
+    height: 28vh;
 }
 
 #if1{
@@ -360,24 +391,29 @@ a{
 
 .textosCardExp{
     width: 100%;
-    height: 55%;
+    flex: 1;
     padding: 20px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .textosCardExp h2{
     color: white;
-    padding-bottom: 1.7vh;
+    padding-bottom: 1.5vh;
     font-size: 1.2rem;
 }
 
 .textosCardExp p{
     color: #6d8ca7;
     padding-bottom: 0.7vh;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 
 .areaTechUtilizadas{
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 0.5vh;
     gap: 10px;
 }
@@ -385,7 +421,7 @@ a{
 .techUtilizada{
     background-color: #191b34d4;
     color: #5E61E8;
-    margin-block: 2vh;
+    margin-block: 1.5vh;
     padding: 3px 10px;
     font-size: 0.7rem;
     border-radius: 4px;
@@ -415,6 +451,11 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.verProjeto:hover{
+    background-color: #4f52d6;
+    transition: 0.3s;
 }
 
 .botaoGitCard{
@@ -561,6 +602,3 @@ footer button:hover{
     cursor: pointer;
     transition:0.4s;
 }
-
-
-
