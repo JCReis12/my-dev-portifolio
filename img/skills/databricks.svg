@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5F46"/>
+      <stop offset="100%" stop-color="#FF3621"/>
+    </linearGradient>
+  </defs>
+  <polygon fill="url(#dbGrad)" points="64,12 14,38 64,64 114,38"/>
+  <polygon fill="#E02B19" points="14,52 64,78 114,52 114,64 64,90 14,64"/>
+  <polygon fill="url(#dbGrad)" points="14,76 64,102 114,76 114,88 64,114 14,88"/>
+</svg>
