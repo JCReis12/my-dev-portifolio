@@ -86,7 +86,7 @@ li a:hover{
 
 .textTT{
     margin-block: 2vh;
-    width: 85%;
+    width: 88%;
     line-height: 1.6;
 }
 
@@ -170,7 +170,7 @@ h1, h2{
 
 .ladoTitulo h1{
     font-weight: 800;
-    font-size: 5.7rem;
+    font-size: 5.5rem;
 }
 
 .ladoTitulo a, .ladoTitulo p{
@@ -219,7 +219,7 @@ a{
     display: flex;
     text-align: justify;
     line-height: 1.7;
-    margin-bottom: 15vh;
+    margin-bottom: 12vh;
 }
 
 .boxCards{
@@ -228,30 +228,41 @@ a{
     align-items: center;
     flex-direction: column;
     width: 98.8vw;
-    height: 60vh;
+    min-height: 62vh;
+    padding-block: 4vh;
+    gap: 3vh;
     background-color: #0000006e;
     border: 2px solid #133e6d;
 }
 
 .cardsSkills{
-    width: 90%;
+    width: 92%;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card{
-    width: 13vw;
-    height: 28vh;
+    width: 10.5vw;
+    min-width: 135px;
+    height: 26vh;
+    padding-inline: 10px;
     background-color: #083565;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vh;
+    text-align: center;
+    gap: 1.8vh;
 
     transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.card p{
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .card:hover {
@@ -261,10 +272,15 @@ a{
 
 .imagemSkill{
     width: 7vw;
-    height: 13vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.skillIcon{
+    width: 68px;
+    height: 68px;
 }
 
 .skill1{
@@ -276,12 +292,12 @@ a{
 }
 
 .skill4, .skill6{
-    width: 80px;
+    width: 75px;
 }
 
 .skill5{
-    width: 90px;
-    padding-bottom: 15px;
+    width: 82px;
+    padding-bottom: 10px;
 }
 
 .tTopo{
@@ -296,9 +312,9 @@ a{
 
 
 .pg3{
-    padding-top: 20vh;
+    padding-top: 18vh;
     padding-bottom: 12vh;
-    min-height: 230vh;
+    min-height: 250vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,7 +350,7 @@ a{
 }
 
 .experience{
-    margin-top: 15vh;
+    margin-top: 12vh;
     gap: 30px;
     display: flex;
     align-items: center;
@@ -345,7 +361,7 @@ a{
     width: 83vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -363,29 +379,42 @@ a{
 .imagemFundoCardExp{
     width: 100%;
     height: 28vh;
+    background-repeat: no-repeat;
 }
 
 #if1{
-    background-image: url(../img/experiencia/aqua1.png);
-    background-size: 505px;
-    background-position: top;
+    background-image: url(../img/experiencia/creditAgent.svg);
+    background-size: cover;
+    background-position: center;
 }
 
 #if2{
-    background-image: url(../img/experiencia/biblio.png);
+    background-image: url(../img/experiencia/travelAgent.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+#if3{
+    background-image: url(../img/java.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#if4{
+    background-image: url(../img/front.png);
     background-size: cover;
     background-position: top;
 }
 
-#if3{
-    background-image: url(../img/experiencia/sesiEstudos.png);
-    background-size: 400px;
-    background-position: top;
+#if5{
+    background-image: url(../img/experiencia/spaceArcade.svg);
+    background-size: cover;
+    background-position: center;
 }
 
-#if4{
+#if6{
     background-image: url(../img/experiencia/image.png);
-    background-size: 480px;
+    background-size: cover;
     background-position: top;
 }
 
