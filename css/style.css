@@ -527,15 +527,39 @@ footer{
 }
 
 .ladoEsquerdoFooter{
-    width: 40%;
+    width: 32%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.centroFooter{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxAvatarFooter{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarFooter{
+    height: 52vh;
+    max-height: 380px;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
 .ladoDireitoFooter{
-    width: 60%;
+    width: 48%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -630,4 +654,31 @@ footer button:hover{
     background-color: #2b6db3;
     cursor: pointer;
     transition:0.4s;
+}
+
+@media (max-width: 900px) {
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .ladoEsquerdoFooter,
+    .centroFooter,
+    .ladoDireitoFooter {
+        width: 100%;
+        height: auto;
+    }
+
+    .boxContato {
+        width: 85%;
+        max-width: 360px;
+    }
+
+    .avatarFooter {
+        height: auto;
+        max-height: 280px;
+        max-width: 100%;
+    }
 }
