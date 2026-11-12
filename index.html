@@ -2,80 +2,104 @@
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>João Carlos [DEV] — Portfólio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js" defer></script></head>
 <body>
-<header class="top"><span class="chip">LVL.99</span>
- <div class="bars"><div><small>HP</small><i class="bar y"><b style="width:100%"></b></i></div><div><small>MP</small><i class="bar b"><b style="width:100%"></b></i></div></div>
- <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<header class="top">
+ <div class="hl"><span class="chip dim">LVL.99</span>
+  <div class="vbars"><div><small class="y">HP</small><small>100/100</small><i class="bar y"><b style="width:100%"></b></i></div><div><small class="lb">MP</small><small>100/100</small><i class="bar lb"><b style="width:100%"></b></i></div></div></div>
  <nav id="nav"><a href="#hero">01_HERO</a><a href="#about">02_ABOUT</a><a href="#tech">03_TECH</a><a href="#quests">04_QUESTS</a><a href="#contact">05_CONTACT</a></nav>
- <a class="btn blue sm" href="#contact">TRANSMIT</a></header>
+ <div class="hr"><button class="ibtn" id="snd" aria-label="Som" aria-pressed="true"><i data-lucide="volume-2"></i></button><a class="btn blue sm" href="#contact"><i data-lucide="terminal-square"></i>TRANSMIT</a><button class="burger" aria-label="Menu" aria-expanded="false"><i data-lucide="menu"></i></button></div>
+</header>
 
 <main>
-<section id="hero" class="wrap">
- <div class="status"><span class="chip">WORLD_STATE: ONLINE</span><span class="chip y">SERVER: SA-EAST-1 // PROD</span><span class="chip y">LATENCY: 12ms (OPTIMAL)</span><span class="chip y r">LVL 99 SENIOR ARCHITECT</span></div>
- <div class="grid2">
-  <div>
-   <div class="panel dlg"><span class="tag">NPC_HOST // DIALOGUE_01</span>
-    <p class="y">&gt; OLÁ, VIAJANTE! BEM-VINDO AO MEU UNIVERSO DIGITAL.</p>
-    <h1>JOÃO CARLOS <em>[DEV]</em></h1>
-    <p class="roles"><span>DATA &amp; AI AGENTS</span><span>BACKEND</span><span>FULLSTACK</span></p>
-    <p class="quote">“Transformando lógica pura em mundos digitais e arquiteturas de alta escalabilidade. Construindo infraestruturas robustas, pixel a pixel, commit a commit.”</p>
-    <div class="log"><b>QUEST LOG ATUAL:</b><br>[STATUS: ATIVO] Aberto a novos desafios, projetos estratégicos &amp; liderança de engenharia.</div>
+<!-- 01 HERO -->
+<section id="hero" class="screen glow"><div class="box">
+ <div class="panel status"><span class="chip dim pc"><u class="sq pc"></u>WORLD_STATE: ONLINE</span><span class="chip"><span class="y">SERVER:</span> SA-EAST-1 // PROD</span><span class="chip"><span class="lb">LATENCY:</span> 12ms (OPTIMAL)</span><span class="chip push y"><i data-lucide="trophy"></i>LVL 99 SENIOR ARCHITECT</span></div>
+ <div class="hero-grid">
+  <div class="hcol">
+   <div>
+    <div class="panel dlg"><span class="tab lbtab"><i data-lucide="terminal-square"></i>NPC_HOST // DIALOGUE_01</span>
+     <p class="hello y"><u class="bar-y"></u>&gt; OLÁ, VIAJANTE! BEM-VINDO AO MEU UNIVERSO DIGITAL.</p>
+     <h1>JOÃO CARLOS <span class="lb">[DEV]</span></h1>
+     <p class="roles"><span class="y">DATA &amp; AI AGENTS</span>·<span class="lb">BACKEND</span>·<span class="y">FULLSTACK</span></p>
+     <p class="quote">“Transformando lógica pura em mundos digitais e arquiteturas de alta escalabilidade. Construindo infraestruturas robustas, pixel a pixel, commit a commit.”</p>
+     <div class="qlog"><span class="qi"><i data-lucide="badge-check"></i></span><div><small class="y">QUEST LOG ATUAL:</small><br>[STATUS: ATIVO] Aberto a novos desafios, projetos estratégicos &amp; liderança de engenharia.</div></div>
+     <p class="pak lb">PRESS ANY KEY ▼</p></div>
+    <div class="cta"><a class="btn blue" href="#quests"><i data-lucide="gamepad-2"></i>EXPLORAR PROJETOS (START)</a><a class="btn" href="#about"><i data-lucide="book-open"></i>MINHA JORNADA (SELECT)</a></div>
    </div>
-   <div class="cta"><a class="btn blue" href="#quests">EXPLORAR PROJETOS (START)</a><a class="btn" href="#about">MINHA JORNADA (SELECT)</a></div>
-   <div class="stats"><div>EXP TOTAL<b class="lb">+5 ANOS</b></div><div>DEPLOYS<b class="or">250+ RAIDS</b></div><div>MANA EFFICIENCY<b class="y">99.98% SLA</b></div></div>
+   <div class="panel stats3"><div><small>EXP TOTAL</small><b class="lb">+5 ANOS</b></div><div><small>DEPLOYS</small><b class="pc">250+ RAIDS</b></div><div><small>MANA EFFICIENCY</small><b class="y">99.98% SLA</b></div></div>
   </div>
-  <div class="panel scene"><div class="titlebar"><span>BATTLESTATION_ROOM.BIN</span><span class="y">16-BIT REALM</span></div>
-   <div class="stage"><img class="avatar" src="assets/images/avatar.png" alt="Avatar pixel art de João Carlos"><span class="bubble">“WELCOME! VAMOS CONSTRUIR?”</span><span class="xp">⚡ +1250 XP/HR</span></div>
-   <div class="chips4"><span>K8S / DOCKER</span><span>LLM AGENTS</span><span>POSTGRES / MYSQL</span><span>RUST / GO / TS</span></div>
-   <div class="tp">TELEPORTE RÁPIDO: <a href="#about">[02_BIO]</a><a href="#tech">[03_STACK]</a><a href="#quests">[04_LOOT]</a><a href="#contact">[05_SYNC]</a></div>
+  <div class="hcol">
+   <div class="panel scene"><div class="tbar"><span><u class="sq pk"></u><u class="sq yy"></u><u class="sq pc"></u> BATTLESTATION_ROOM.BIN</span><b class="y">16-BIT REALM</b></div>
+    <div class="stage"><span class="mtag t1"><i data-lucide="bookmark"></i>ALGORITHMS_VOL_IV</span><span class="mtag t2"><i data-lucide="braces"></i>DISTRIBUTED_SYS</span>
+     <div class="term"><div>&gt; <span class="lb">SYS_OK</span><br>&gt; <span class="pc">AI_RUNNING</span><br>&gt; <span class="y">0 ERRORS</span><br><u class="cur"></u></div></div>
+     <span class="bubble">“WELCOME! VAMOS CONSTRUIR?”</span><img class="av" src="assets/images/avatar.png" alt="Avatar pixel art de João Carlos"><span class="xp"><i data-lucide="zap"></i>+1250 XP/HR</span></div>
+    <div class="quad"><span><i data-lucide="server" class="lb"></i>K8S / DOCKER</span><span><i data-lucide="bot" class="pc"></i>LLM AGENTS</span><span><i data-lucide="database" class="y"></i>POSTGRES / MYSQL</span><span><i data-lucide="terminal-square" class="lb"></i>RUST / GO / TS</span></div></div>
+   <div class="panel tp"><span class="lb"><i data-lucide="fast-forward"></i> TELEPORTE<br>RÁPIDO:</span><span class="tpl"><a href="#about">[02_BIO]</a><a href="#tech">[03_STACK]</a><a href="#quests">[04_LOOT]</a><a href="#contact">[05_SYNC]</a></span></div>
   </div>
- </div>
-</section>
+ </div></div></section>
 
-<section id="about" class="wrap">
- <h2><span class="tag y2">ACT II // CHARACTER_LORE</span> STATUS &amp; TRAJETÓRIA DO AVENTUREIRO</h2>
- <div class="grid3">
-  <div class="panel"><div class="titlebar"><span>PARTY_SLOT_01</span><span class="o">ONLINE</span></div>
-   <img class="avatar" src="assets/images/avatar.png" alt="Avatar"><p class="cap">LVL. 99 ARCHITECT · XP: 994,200</p>
-   <div class="vit"><p>HP [VITALITY] <span>9,999 / 9,999</span></p><i class="bar y"><b style="width:100%"></b></i><p>MP [LOGIC/AI] <span>8,450 / 8,450</span></p><i class="bar b"><b style="width:100%"></b></i><p>STM [COMPUTE] <span>100% READY</span></p><i class="bar o"><b style="width:100%"></b></i></div>
-   <p class="mini">RELÍQUIAS &amp; INSÍGNIAS — 4 / 4 SLOTS</p><div class="chips4"><span>GCP_CERT</span><span>CLEAN_ARCH</span><span>GEN_AI</span><span>DATA_OPS</span></div></div>
+<!-- 02 ABOUT -->
+<section id="about" class="screen"><div class="box">
+ <div class="head"><span class="tab ytab">ACT II // CHARACTER_LORE</span><h2>STATUS &amp; TRAJETÓRIA DO AVENTUREIRO</h2>
+  <div class="panel chips2"><span><i data-lucide="shield"></i>CLASS: TECH_ALCHEMIST</span><span><i data-lucide="settings" class="lb"></i>ROLE: FULL-CYCLE LEAD</span></div></div>
+ <div class="about-grid"><div>
+   <div class="panel"><div class="tbar flat"><span class="y"><i data-lucide="gamepad-2"></i> PARTY_SLOT_01</span><b><u class="sq pc"></u>ONLINE</b></div>
+    <div class="stage tall"><i class="corner l"></i><i class="corner r"></i><img class="av" src="assets/images/avatar.png" alt="Avatar"><div class="cap"><span>LVL. 99 ARCHITECT</span><span>XP: 994,200</span></div></div>
+    <div class="vit"><div><p><span><i data-lucide="heart" class="y"></i> HP [VITALITY]</span>9,999 / 9,999</p><i class="bar y big"><b style="width:100%"></b></i></div><div><p><span><i data-lucide="zap" class="lb"></i> MP [LOGIC/AI]</span>8,450 / 8,450</p><i class="bar lb big"><b style="width:100%"></b></i></div><div><p><span><i data-lucide="cpu" class="pc"></i> STM [COMPUTE]</span>100% READY</p><i class="bar pc big"><b style="width:100%"></b></i></div></div></div>
+   <div class="panel"><p class="rel"><span class="y"><i data-lucide="package"></i> RELÍQUIAS &amp; INSÍGNIAS</span><b class="y">4 / 4 SLOTS</b></p>
+    <div class="quad q4"><span><i data-lucide="badge-check" class="y"></i>GCP_CERT</span><span><i data-lucide="terminal-square" class="lb"></i>CLEAN_ARCH</span><span><i data-lucide="bot" class="pc"></i>GEN_AI</span><span><i data-lucide="server"></i>DATA_OPS</span></div></div></div>
   <div>
-   <div class="panel dlg"><span class="tag">[ SPEAKER : DEV ]</span><p>&gt; Olá! Seja bem-vindo à minha base operacional. Minha trajetória é forjada sobre uma sólida fundação em Engenharia de Software, raciocínio lógico analítico e o compromisso inabalável de resolver desafios de alta complexidade computacional.”</p><p>&gt; Construo sistemas que resistem à escala real: unindo o rigor clássico da modelagem backend à agilidade da computação em nuvem, orquestração de dados e inteligência artificial generativa.</p></div>
-   <div class="panel"><h3>ATRIBUTOS &amp; ESPECIALIZAÇÕES <small>PASSIVE_TREE: MAXED</small></h3><div id="attrs"></div></div>
-   <div class="grid2e"><div class="panel"><h4>BIOGRAFIA_DO_HERÓI</h4><p>“Desenvolvedor focado em unir a solidez da engenharia de software tradicional ao poder transformador da Inteligência Artificial e da Engenharia de Dados.”</p><small class="y">MISSÃO PRINCIPAL: ESCALAR VALOR</small></div>
-   <div class="panel"><h4 class="lb">ESTILO_DE_TRABALHO</h4><p>Clean Code, Arquitetura Limpa, testes automatizados de ponta a ponta e foco intransigente em entregas práticas de valor real para o produto e para o usuário final.</p><small class="lb">PASSIVA: ZERO DÍVIDA TÉCNICA</small></div></div>
-  </div>
+   <div class="panel dlg"><span class="tab lbtab"><i data-lucide="messages-square"></i>[ SPEAKER : DEV ]</span><div class="inset txt"><p><span class="lb">&gt;</span> “Olá! Seja bem-vindo à minha base operacional. Minha trajetória é forjada sobre uma sólida fundação em Engenharia de Software, raciocínio lógico analítico e o compromisso inabalável de resolver desafios de alta complexidade computacional.”</p><p><span class="lb">&gt;</span> Construo sistemas que resistem à escala real: unindo o rigor clássico da modelagem backend à agilidade da computação em nuvem, orquestração de dados e inteligência artificial generativa.</p><p class="pa y">PRESS_ANYWHERE_TO_CONTINUE ▼</p></div></div>
+   <div class="panel"><p class="rel big"><span class="ttl"><i data-lucide="bar-chart-3" class="y"></i> ATRIBUTOS &amp; ESPECIALIZAÇÕES</span><small>PASSIVE_TREE: MAXED</small></p><div id="attrs"></div></div>
+   <div class="g2"><div class="panel card2"><h4 class="y"><i data-lucide="file-user"></i> BIOGRAFIA_DO_HERÓI</h4><p>“Desenvolvedor focado em unir a solidez da engenharia de software tradicional ao poder transformador da Inteligência Artificial e da Engenharia de Dados.”</p><small class="y"><i data-lucide="check-square"></i> MISSÃO PRINCIPAL: ESCALAR VALOR</small></div>
+    <div class="panel card2"><h4 class="lb"><i data-lucide="cpu"></i> ESTILO_DE_TRABALHO</h4><p>Clean Code, Arquitetura Limpa, testes automatizados de ponta a ponta e foco intransigente em entregas práticas de valor real para o produto e para o usuário final.</p><small class="lb"><i data-lucide="sparkles"></i> PASSIVA: ZERO DÍVIDA TÉCNICA</small></div></div>
+  </div></div></div></section>
+
+<!-- 03 TECH -->
+<section id="tech" class="screen"><div class="box">
+ <div class="panel thead"><span class="bico"><i data-lucide="shield"></i></span><div class="tt"><small class="y">SYS.MODULE // 03 <span class="tx">• INVENTORY &amp; FORGE</span></small><h2 class="lb">ARSENAL DE HABILIDADES</h2></div>
+  <div class="mini inset"><div><p><span class="mu">TOTAL DE ITENS: </span><b class="y">18 / 18 UNLOCKED</b></p><i class="bar y"><b style="width:100%"></b></i></div><div><p><span class="mu">MASTERY LEVEL: </span><b class="pc">ARCHITECT (LVL.99)</b></p><i class="bar pc"><b style="width:95%"></b></i></div></div><span class="chip dim lb"><u class="sq lb"></u>MANA SYNC: 100%</span></div>
+ <div class="tech-grid"><aside>
+   <div class="panel"><div class="fm"><span class="tab ytab">[MASTER FORGER // LVL.99]</span><small class="y"><i data-lucide="trophy"></i> ID: #0042</small></div>
+    <div class="stage forge"><span class="mtag a"><i data-lucide="wand-sparkles" class="lb"></i>INT: 98</span><span class="mtag b"><i data-lucide="zap" class="y"></i>DEX: 94</span><img class="av" src="assets/images/avatar.png" alt="Avatar"><i class="floor"></i></div>
+    <div class="tele"><p class="y"><i data-lucide="message-square"></i> FORGE MASTER TELEMETRY</p><p>"Bem-vindo ao meu arsenal. Cada ferramenta aqui foi forjada em combate real, desde microsserviços de alta escala até redes autônomas de IA."</p><p class="st"><span class="y">● STATUS: ATIVO</span><span>SLOTS USADOS: 18/18</span></p></div></div>
+   <div class="panel" id="equip"></div></aside>
+  <div><div class="filters" data-t="skills"></div><div class="cards3" id="skills"></div></div></div>
+ <div class="panel conq"><i data-lucide="trophy" class="y big"></i><div><h3>CONQUISTAS DO ARSENAL DESBLOQUEADAS</h3><p>Todas as 18 runas e ferramentas foram testadas e validadas em produção.</p></div><div class="kv inset"><small>XP TOTAL</small><b class="y">174.500</b></div><div class="kv inset"><small>SYNERGY</small><b class="lb">MAX</b></div></div>
+</div></section>
+
+<!-- 04 QUESTS -->
+<section id="quests" class="screen"><div class="box">
+ <div class="zone"><span class="y"><i data-lucide="scan-line"></i> ZONE 04 // WORLD STAGE: DEPLOYMENT SERVER</span><span>QUESTS RESOLVED: 06/06 [100%] <u class="sq yy"></u></span></div>
+ <div class="panel qhero"><div class="qav"><img class="av" src="assets/images/avatar.png" alt="Avatar"><div class="cap2"><span class="y"><i data-lucide="coffee"></i>COFFEE: 98%</span><span class="lb"><i data-lucide="terminal-square"></i>NEOVIM [ACTIVE]</span></div></div>
+  <div><p class="lb ql"><i data-lucide="swords"></i> QUEST LOG &amp; MISSION ARCHIVE</p><h1>PROJETOS EM DESTAQUE</h1><p class="qd">Missões concluídas e sistemas construídos em produção. Navegue pelos artefatos de código, arquiteturas distribuídas e pipelines de alta performance forjados em combate de infraestrutura real.</p>
+   <div class="stats4 inset"><div><small>TOTAL QUESTS</small><b class="pc">06 PROJETOS</b></div><div><small>XP ACCUMULATED</small><b class="lb">+9,000 EXP</b></div><div><small>DEPLOY SUCCESS</small><b class="y">99.98% SLA</b></div><div><small>ARCHITECTURE</small><b>CLOUD READY</b></div></div>
+   <p class="pt">PRESS [TAB] OU ROLAR PARA VISUALIZAR O QUADRO COMPLETO <span class="y">▼</span></p></div></div>
+ <div class="panel fbar"><div class="filters" data-t="projects"></div><span class="y st"><i data-lucide="folder-check" class="pc"></i> STATUS: PRODUCTION_VERIFIED</span></div>
+ <div class="cards3 pr" id="projects"></div>
+ <div class="panel ckp"><span class="bico dim"><i data-lucide="save" class="y"></i></span><div><b class="y">CHECKPOINT RECORDED: ALL 6 ARTIFACTS COMPILED</b><br><small>Pronto para integrar novos épicos, arquiteturas complexas ou pipelines de alto impacto.</small></div><a class="btn blue sm" href="#contact"><i data-lucide="send"></i>PROPOR NOVA MISSÃO / CONTRATO</a></div>
+</div></section>
+
+<!-- 05 CONTACT -->
+<section id="contact" class="screen glow2"><div class="box">
+ <div class="panel chead"><span class="bico"><i data-lucide="mail-plus"></i></span><div><small class="y"><u class="sq yy"></u> ACT_V // FINAL_ENCOUNTER</small><h2>O MENSAGEIRO • POSTO DE COMUNICAÇÃO</h2></div><span class="chip push"><span class="lb">SAVE_SLOT: #05</span> &nbsp;|&nbsp; CHECKPOINT VERIFIED <i data-lucide="check-circle-2" class="pc"></i></span></div>
+ <div class="social">
+  <div class="panel sl"><div class="tbar flat dark"><span class="pc">[ EQUIP: SLOT_L ]</span><i data-lucide="external-link" class="lb"></i></div><a class="scard gh" href="#" data-pending="GitHub" target="_blank" rel="noopener"><span class="sico"><i data-lucide="code-xml"></i></span><b>GITHUB</b><em>REPOSITÓRIOS &amp; CÓDIGO</em><hr><span>github.com/seu-usuario</span></a><p class="sf"><span>+99 COMMITS</span><b class="y">OPEN_SOURCE</b></p></div>
+  <img class="av mx" src="assets/images/avatar-contact.png" alt="Avatar com óculos escuros e casaco longo, segurando duas pílulas">
+  <div class="panel sl"><div class="tbar flat dark"><span class="pc">[ EQUIP: SLOT_R ]</span><i data-lucide="external-link" class="lb"></i></div><a class="scard li" href="#" data-pending="LinkedIn" target="_blank" rel="noopener"><span class="sico"><i data-lucide="share-2"></i></span><b>LINKEDIN</b><em>CONEXÕES &amp; CARREIRA</em><hr><span>linkedin.com/in/seu-perfil</span></a><p class="sf"><span>+500 NETWORK</span><b class="y">HIREABLE</b></p></div>
  </div>
-</section>
-
-<section id="tech" class="wrap">
- <h2><span class="tag lbt">SYS_MODULE // 03 · INVENTORY &amp; POWER</span> ARSENAL DE HABILIDADES</h2>
- <div class="filters" data-target="skills"></div><div class="cards" id="skills"></div>
- <div class="panel foot">🏆 <b>CONQUISTAS DO ARSENAL DESBLOQUEADAS</b> — Todas as 18 runas e ferramentas foram testadas e validadas em produção. <span class="chip">XP TOTAL 174.500</span><span class="chip lbc">SYNERGY MAX</span></div>
-</section>
-
-<section id="quests" class="wrap">
- <h2><span class="tag y2">QUEST LOG &amp; MISSION ARCHIVE</span> PROJETOS EM DESTAQUE</h2>
- <p>Missões concluídas e sistemas construídos em produção. Navegue pelos artefatos de código, arquiteturas distribuídas e pipelines de alta performance forjados em combate de infraestrutura real.</p>
- <div class="stats4"><div>TOTAL QUESTS<b>06 PROJETOS</b></div><div>XP ACCUMULATED<b class="y">+9,000 EXP</b></div><div>DEPLOY SUCCESS<b class="y">99.98% SLA</b></div><div>ARCHITECTURE<b>CLOUD READY</b></div></div>
- <div class="filters" data-target="projects"></div><div class="cards c3" id="projects"></div>
- <div class="panel foot">CHECKPOINT RECORDED: ALL 6 ARTIFACTS COMPILED <a class="btn blue sm" href="#contact">PROPOR NOVA MISSÃO / CONTRATO</a></div>
-</section>
-
-<section id="contact" class="wrap">
- <h2><span class="tag y2">ACT V // FINAL_ENCOUNTER</span> O MENSAGEIRO • POSTO DE COMUNICAÇÃO</h2>
- <div class="social"><a class="panel gh" href="#" data-pending="GitHub" target="_blank" rel="noopener"><b>GITHUB</b><small>REPOSITÓRIOS &amp; CÓDIGO</small><span>github.com/seu-usuario</span></a>
-  <img class="avatar" src="assets/images/avatar-contact.png" alt="Avatar com óculos escuros e casaco longo">
-  <a class="panel li" href="#" data-pending="LinkedIn" target="_blank" rel="noopener"><b>LINKEDIN</b><small>CONEXÕES &amp; CARREIRA</small><span>linkedin.com/in/seu-perfil</span></a></div>
- <div class="panel dlg"><span class="tag y2">CONVERSA // QUEST LOG FINAL</span><h3 class="y">MISSÃO COMPLETA! VAMOS CONVERSAR?</h3><p>“Tem um projeto desafiador, uma oportunidade profissional ou quer bater um papo sobre backend, dados ou inteligência artificial? Minha caixa de entrada está sempre aberta!”</p><span class="chip">DIRECT_LINK: dev@email.com</span></div>
- <form class="panel" id="form"><div class="titlebar"><span>CONSOLE://MESSENGER_V2.0.4.sh</span><span>TTY1 [UTF-8] ESTABLISHED</span></div>
-  <div class="grid2e"><label>[NOME DO VIAJANTE]<input name="n" required placeholder="> Digite seu nome ou guilda..."></label><label>[EMAIL DE CONTATO]<input name="e" type="email" required placeholder="> contato@guilda.org..."></label></div>
-  <label>[MENSAGEM / BRIEFING DA MISSÃO]<textarea name="m" required rows="5" placeholder="> Escreva aqui detalhes sobre seu projeto, desafio técnico ou proposta profissional..."></textarea></label>
-  <div class="send"><small id="stby" class="y">STANDBY: AGUARDANDO COMANDO DO JOGADOR</small><button class="btn blue" type="submit">ENVIAR MENSAGEM (PRESS ENTER)</button></div></form>
- <div class="stats"><div>CANAL PRIMÁRIO<b>dev@email.com</b></div><div>FUSO HORÁRIO<b>UTC-3 (SÃO PAULO / BRT)</b></div><div>STATUS ATUAL<b class="y">DISPONÍVEL P/ PROJETOS</b></div></div>
-</section>
+ <div class="panel dlg final"><span class="tab ytab">CONVERSAÇÃO // QUEST LOG FINAL</span><h3 class="y"><i data-lucide="flag"></i> MISSÃO COMPLETA! VAMOS CONVERSAR?</h3><p>“Tem um projeto desafiador, uma oportunidade profissional ou quer bater um papo sobre backend, dados ou inteligência artificial? Minha caixa de entrada está sempre aberta!”</p><span class="chip dl">DIRECT_LINK: <span class="lb">dev@email.com</span></span><p class="pa y">▼ PRESS [TAB] PARA TERMINAL</p></div>
+ <form class="panel console" id="form"><div class="tbar flat"><span class="lb"><u class="sq pk"></u><u class="sq yy"></u><u class="sq pc"></u> CONSOLE://MESSENGER_V2.0.4.sh</span><b>TTY1 [UTF-8] ESTABLISHED</b></div>
+  <div class="g2"><label><span class="y"><i data-lucide="user"></i>[NOME DO VIAJANTE]</span><div class="inp"><b class="lb">&gt;</b><input name="n" required placeholder="Digite seu nome ou guilda..."></div></label><label><span class="lb"><i data-lucide="at-sign"></i>[EMAIL DE CONTATO]</span><div class="inp"><b class="lb">&gt;</b><input name="e" type="email" required placeholder="contato@guilda.org..."></div></label></div>
+  <label><span class="pc"><i data-lucide="terminal-square"></i>[MENSAGEM / BRIEFING DA MISSÃO]</span><div class="inp ta"><b class="lb">&gt;</b><textarea name="m" required rows="4" placeholder="Escreva aqui detalhes sobre seu projeto, desafio técnico ou proposta profissional..."></textarea></div></label>
+  <div class="send"><small><u class="sq yy"></u> <span id="stby">STANDBY: AGUARDANDO COMANDO DO JOGADOR</span></small><button class="btn blue big" type="submit"><i data-lucide="send"></i>ENVIAR MENSAGEM (PRESS ENTER)</button></div></form>
+ <div class="info3"><div class="panel"><span class="bico dim"><i data-lucide="mail" class="lb"></i></span><div><small>CANAL PRIMÁRIO</small><b>dev@email.com</b></div></div><div class="panel"><span class="bico dim"><i data-lucide="clock" class="pc"></i></span><div><small>FUSO HORÁRIO</small><b>UTC-3 (SÃO PAULO / BRT)</b></div></div><div class="panel"><span class="bico dim"><i data-lucide="badge-check" class="y"></i></span><div><small>STATUS ATUAL</small><b class="y">DISPONÍVEL P/ PROJETOS</b></div></div></div>
+ <div class="panel saved"><span><i data-lucide="save" class="pc"></i><b class="pc">GAME SAVED</b> • THANKS FOR VISITING</span><span class="mu">PRESS ANY KEY TO CONTINUE &nbsp; <b class="y">★ 100% CLEAR</b></span></div>
+</div></section>
 </main>
-<footer class="wrap panel foot"><div>✕ QUEST LOG COMPLETE // SAVE POINT REGISTERED<br><small>© 2026 DEVELOPER PORTFOLIO • PRESS START TO BUILD • CRAFTED WITH PIXELS &amp; CODE</small></div><a class="btn sm" href="#hero">START_POS</a></footer>
+<footer><div class="panel foot"><div><b class="y"><i data-lucide="swords"></i> QUEST LOG COMPLETE // SAVE POINT REGISTERED</b><br><small>© 2026 DEVELOPER PORTFOLIO • PRESS START TO BUILD • CRAFTED WITH PIXELS &amp; CODE</small></div>
+ <div class="fr"><a class="ibtn" href="#" data-pending="GitHub" aria-label="Código"><i data-lucide="code-xml"></i></a><a class="ibtn" href="#" data-pending="Rede" aria-label="Rede"><i data-lucide="share-2"></i></a><a class="btn sm" href="#hero"><i data-lucide="arrow-up"></i>START_POS</a></div></div></footer>
 <script src="js/components.js"></script><script src="js/main.js"></script></body></html>
