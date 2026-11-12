@@ -1,387 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/MyLogo.png" type="image/png">
-
-    <title id="tituloPagina">João Carlos | Data & AI Engineer</title>
-</head>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>João Carlos [DEV] — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js" defer></script></head>
 <body>
-
-    <header>
-        <img src="./img/logoSenai.png" alt="Logo SENAI" class="logoSenai">
-        <ul>
-            <li><a href="#" id="navHome">Home</a></li>
-            <li><a href="#about" id="navAbout">About</a></li>
-            <li><a href="#works" id="navWorks">Works</a></li>
-            <li><a href="#contact" id="navContact">Contact</a></li>
-        </ul>
-        <div class="areaHeaderDireita">
-            <button class="botaoIdioma" id="botaoIdioma" onclick="alternarIdioma()">PT-BR</button>
-            <img src="./img/logo2RP.png" alt="Logo 2RP Net" class="logo2RP">
-        </div>
-    </header>
-
-    <div class="espacoEmbaixoDoHeader"></div>
-
-    <main class="pg1">
-
-        <section class="ladoTitulo">
-            <p id="saudacaoTopo">Hello, I'm João Carlos,</p>
-            <h1 id="cargoTopo">Data &amp; AI <br> Engineer</h1>
-            <p class="textTT" id="descricaoTopo">Focused on Data Engineering, AI Solutions (Autonomous AI Agents &amp; LLMs), and scalable architectures—transforming complex data into intelligent automation and strategic value.</p>
-            <section class="partezinhaTopo">
-                <a href="#contact"><button id="botaoContatoTopo">Get in touch</button></a>
-                <a href="https://www.linkedin.com/" target="_blank"><div class="iconeLinkedinTopo"><img src="./img/linkedinTopo.png" alt="LinkedIn"></div></a>
-
-                <div class="espacoAncora" id="about"></div>
-
-            </section>
-        </section>
-
-        <section class="ladoFoto">
-            <div class="foto"></div>
-        </section>
-        
-    </main>
-
-    
-
-    <main class="pg2">
-
-        <section class="topoPg2">
-            <h1 id="tituloSobre">About</h1>
-            <div class="tracao"></div>
-        </section>
-
-        <section class="textoSobre">
-
-            <p id="paragrafoSobre">Currently, I work in Data Engineering and AI at 2RP Net, providing specialized services for Banco Digio. In my daily routine, I work on building, analyzing, and processing data pipelines, performing data normalization and transactions in testing environments with PySpark and Databricks, and utilizing the Google Cloud Platform (GCP) ecosystem and BigQuery. Additionally, I design and plan data architectures and develop intelligent process automations powered by Autonomous AI Agents (Google ADK and Gemini/LLMs).
-
-<br><br>
-
-In the academic sphere, I am pursuing a degree in Systems Analysis and Development at SENAI, expanding my expertise in software engineering, Java APIs and backend systems, React frontends, and PostgreSQL relational databases. Prior to my undergraduate studies, I completed a Technical Degree in Systems Development also at SENAI, where I built a solid foundation developing backends with Java and Spring Boot, dynamic frontends using Vanilla JS (HTML, CSS, JavaScript), React, and Next.js, as well as modeling and normalizing relational databases with MySQL.</p>
-
-        </section>
-
-        <section class="boxCards">
-            <section class="tTopo">
-                <h3 id="tituloSkills">Technical Skills</h3>
-            <div class="tracinho"></div>
-            </section>
-            <section class="cardsSkills">
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/python.svg" alt="Python"></div>
-                    <p>Python</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/ai.svg" alt="AI Agents & Gemini"></div>
-                    <p>AI Agents (ADK &amp; Gemini)</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/gcp.svg" alt="BigQuery & GCP"></div>
-                    <p>BigQuery &amp; GCP</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skill5" src="./img/skills/java.png" alt="Java & Spring Boot"></div>
-                    <p>Java &amp; Spring Boot</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/sql.svg" alt="SQL Databases"></div>
-                    <p>SQL (Postgres &amp; MySQL)</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/react.svg" alt="React"></div>
-                    <p>React &amp; Frontend</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skill6" src="./img/skills/docker.png" alt="Docker & Git"></div>
-                    <p>Docker &amp; Git</p>
-                </div>
-
-            </section>
-            <div class="espacoAncora" id="works"></div>
-        </section>
-
-
-    </main>
-
-    
-
-    <main class="pg3">
-
-        <section class="topoPg3">
-            <h1 id="tituloWorks">Works</h1>
-        </section>
-
-        <section class="textoSobre2">
-
-            <p id="paragrafoWorks">Throughout my trajectory in Data Engineering, Artificial Intelligence, and Software Development at SENAI, I have developed projects ranging from multi-agent AI systems integrated with cloud data warehouses to RESTful APIs, full-stack applications, and interactive interfaces. Below are some of the main projects from my portfolio.
-            </p>
-            
-        </section>
-
-        <section class="experience">
-
-            <section class="expContainer">
-                
-
-
-                <!--CARD 1: CREDIT RISK MULTI-AGENT-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if1"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard1">Credit &amp; Risk Analysis Multi-Agent</h2>
-                        <p id="descCard1">An intelligent multi-agent AI system built with Google ADK, Python, and BigQuery, designed to act as an automated credit and risk analysis assistant capable of querying analytical data and assisting in financial decision-making.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">Python</div>
-                            <div class="techUtilizada">Google ADK</div>
-                            <div class="techUtilizada">BigQuery</div>
-                            <div class="techUtilizada">AI Agents</div>
-                            <div class="techUtilizada">Gemini LLM</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/credit-risk-multi-agent" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 2: SMART TRAVEL AGENT-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if2"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard2">Smart Travel AI Agent</h2>
-                        <p id="descCard2">An autonomous travel assistant powered by AI Agents and Google ADK (in active development). Designed to provide end-to-end travel planning, including custom itineraries, real-time weather forecasts, hotel recommendations, and flight options.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">Python</div>
-                            <div class="techUtilizada">Google ADK</div>
-                            <div class="techUtilizada">AI Agents</div>
-                            <div class="techUtilizada">LLMs</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/smart-travel-agent" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-                <!--CARD 3: PET MANAGEMENT REST API-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if3"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard3">Pet Management REST API</h2>
-                        <p id="descCard3">A backend management system developed with Java and Spring Boot integrated with a relational MySQL database, applying RESTful API design, data persistence, and layered architecture best practices.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">Java</div>
-                            <div class="techUtilizada">Spring Boot</div>
-                            <div class="techUtilizada">MySQL</div>
-                            <div class="techUtilizada">REST API</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/Pet-Management-RestAPI.git" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 4: REACT COMPONENTS STUDY PLATFORM-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if4"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard4">React Components Study Platform</h2>
-                        <p id="descCard4">An interactive study platform built with React to explore and consolidate core modern frontend concepts, including componentization, state management, props, hooks, and dynamic UI rendering.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">React</div>
-                            <div class="techUtilizada">JavaScript</div>
-                            <div class="techUtilizada">HTML</div>
-                            <div class="techUtilizada">CSS</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/frontend-components-study-screen" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 5: SENAI ARCADE SPACE-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if5"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard5">SENAI Space Arcade Game</h2>
-                        <p id="descCard5">A classic space shooter arcade game developed entirely with Vanilla JavaScript, focusing on programming logic, DOM/Canvas manipulation, collision detection, and real-time event loops.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">JavaScript (Vanilla)</div>
-                            <div class="techUtilizada">HTML5</div>
-                            <div class="techUtilizada">CSS3</div>
-                            <div class="techUtilizada">Game Logic</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/senai-arcade-space-vanilla" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 6: CATHOLIC SITE-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if6"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard6">Catholic Site</h2>
-                        <p id="descCard6">A full-stack web platform under active development that brings together traditional prayers, liturgical readings, and spiritual resources to support and enrich daily faith practice.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">HTML</div>
-                            <div class="techUtilizada">CSS</div>
-                            <div class="techUtilizada">JavaScript</div>
-                            <div class="techUtilizada">Spring Boot</div>
-                            <div class="techUtilizada">MySQL</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/catholic-2.0.git" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-            </section>
-
-        </section>
-
-    </main>
-
-    <footer id="contact">
-
-        <section class="ladoEsquerdoFooter">
-
-            <div class="boxContato">
-
-                <div class="cardCont" id="cardGit">
-                    <a href="https://github.com/JCReis12" target="_blank">
-                        <div class="imagemFooter" id="i1"><img src="./img/footer/git.png" alt="GitHub"></div>
-                        <h2>GitHub</h2>
-                    </a>
-                </div>
-
-                <div class="cardCont" id="cardLinkedin">
-                    <a href="https://br.linkedin.com/" target="_blank">
-                        <div class="imagemFooter" id="i2"><img src="./img/footer/linkedin.png" alt="LinkedIn"></div>
-                        <h2>LinkedIn</h2>
-                    </a>
-                </div>
-
-                <div class="cardCont" id="cardEmail">
-                    <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox?compose=GTvVlcSHvbPNRfvRLMqXSCDgfwFNgJDvSwFCFKLrwTLWQXRrpLlsBdghXKgwVlQMKdXXcSmnsbfDr" target="_blank">
-                        <div class="imagemFooter" id="i3"><img src="./img/footer/email.png" alt="Email"></div>
-                        <h2>Email</h2>
-                    </a>
-                </div>
-
-                <div class="cardCont" id="cardInsta">
-                    <a href="https://www.instagram.com/jota_c_12/" target="_blank">
-                        <div class="imagemFooter" id="i4"><img src="./img/footer/insta.png" alt="Instagram"></div>
-                        <h2>Instagram</h2>
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="centroFooter">
-            <div class="boxAvatarFooter">
-                <img src="./img/footer/avatar.webp" alt="Avatar João Carlos" class="avatarFooter">
-            </div>
-        </section>
-
-        <section class="ladoDireitoFooter">
-            <h1 id="tituloContatoFooter">Get in touch</h1>
-            <section class="formulario">
-                <label for="nome" id="labelNome">Name:</label>
-                <input type="text" id="nome" placeholder="Enter your name">
-
-                <label for="email" id="labelEmail">E-mail:</label>
-                <input type="email" id="email" placeholder="Enter your e-mail">
-
-                <label for="mensagem" id="labelMensagem">Leave your message:</label>
-                <textarea name="mensagem" id="mensagem" placeholder="Enter your message"></textarea>
-
-                <div class="botaoForm">
-                    <button id="enviar" onclick="enviar()">Send Message</button>
-                </div>
-            </section>
-        </section>
-
-    </footer>
-
-    <script src="./js/script.js"></script>
-    
-</body>
-</html>
+<header class="top">
+ <div class="hl"><span class="chip dim">LVL.99</span>
+  <div class="vbars"><div><small class="y">HP</small><small>100/100</small><i class="bar y"><b style="width:100%"></b></i></div><div><small class="lb">MP</small><small>100/100</small><i class="bar lb"><b style="width:100%"></b></i></div></div></div>
+ <nav id="nav"><a href="#hero">01_HERO</a><a href="#about">02_ABOUT</a><a href="#tech">03_TECH</a><a href="#quests">04_QUESTS</a><a href="#contact">05_CONTACT</a></nav>
+ <div class="hr"><button class="ibtn" id="snd" aria-label="Som" aria-pressed="true"><i data-lucide="volume-2"></i></button><a class="btn blue sm" href="#contact"><i data-lucide="terminal-square"></i>TRANSMIT</a><button class="burger" aria-label="Menu" aria-expanded="false"><i data-lucide="menu"></i></button></div>
+</header>
+
+<main>
+<!-- 01 HERO -->
+<section id="hero" class="screen glow"><div class="box">
+ <div class="panel status"><span class="chip dim pc"><u class="sq pc"></u>WORLD_STATE: ONLINE</span><span class="chip"><span class="y">SERVER:</span> SA-EAST-1 // PROD</span><span class="chip"><span class="lb">LATENCY:</span> 12ms (OPTIMAL)</span><span class="chip push y"><i data-lucide="trophy"></i>LVL 99 SENIOR ARCHITECT</span></div>
+ <div class="hero-grid">
+  <div class="hcol">
+   <div>
+    <div class="panel dlg"><span class="tab lbtab"><i data-lucide="terminal-square"></i>NPC_HOST // DIALOGUE_01</span>
+     <p class="hello y"><u class="bar-y"></u>&gt; OLÁ, VIAJANTE! BEM-VINDO AO MEU UNIVERSO DIGITAL.</p>
+     <h1>JOÃO CARLOS <span class="lb">[DEV]</span></h1>
+     <p class="roles"><span class="y">DATA &amp; AI AGENTS</span>·<span class="lb">BACKEND</span>·<span class="y">FULLSTACK</span></p>
+     <p class="quote">“Transformando lógica pura em mundos digitais e arquiteturas de alta escalabilidade. Construindo infraestruturas robustas, pixel a pixel, commit a commit.”</p>
+     <div class="qlog"><span class="qi"><i data-lucide="badge-check"></i></span><div><small class="y">QUEST LOG ATUAL:</small><br>[STATUS: ATIVO] Aberto a novos desafios, projetos estratégicos &amp; liderança de engenharia.</div></div>
+     <p class="pak lb">PRESS ANY KEY ▼</p></div>
+    <div class="cta"><a class="btn blue" href="#quests"><i data-lucide="gamepad-2"></i>EXPLORAR PROJETOS (START)</a><a class="btn" href="#about"><i data-lucide="book-open"></i>MINHA JORNADA (SELECT)</a></div>
+   </div>
+   <div class="panel stats3"><div><small>EXP TOTAL</small><b class="lb">+5 ANOS</b></div><div><small>DEPLOYS</small><b class="pc">250+ RAIDS</b></div><div><small>MANA EFFICIENCY</small><b class="y">99.98% SLA</b></div></div>
+  </div>
+  <div class="hcol">
+   <div class="panel scene"><div class="tbar"><span><u class="sq pk"></u><u class="sq yy"></u><u class="sq pc"></u> BATTLESTATION_ROOM.BIN</span><b class="y">16-BIT REALM</b></div>
+    <div class="stage"><span class="mtag t1"><i data-lucide="bookmark"></i>ALGORITHMS_VOL_IV</span><span class="mtag t2"><i data-lucide="braces"></i>DISTRIBUTED_SYS</span>
+     <div class="term"><div>&gt; <span class="lb">SYS_OK</span><br>&gt; <span class="pc">AI_RUNNING</span><br>&gt; <span class="y">0 ERRORS</span><br><u class="cur"></u></div></div>
+     <span class="bubble">“WELCOME! VAMOS CONSTRUIR?”</span><img class="av" src="assets/images/avatar.png" alt="Avatar pixel art de João Carlos"><span class="xp"><i data-lucide="zap"></i>+1250 XP/HR</span></div>
+    <div class="quad"><span><i data-lucide="server" class="lb"></i>K8S / DOCKER</span><span><i data-lucide="bot" class="pc"></i>LLM AGENTS</span><span><i data-lucide="database" class="y"></i>POSTGRES / MYSQL</span><span><i data-lucide="terminal-square" class="lb"></i>RUST / GO / TS</span></div></div>
+   <div class="panel tp"><span class="lb"><i data-lucide="fast-forward"></i> TELEPORTE<br>RÁPIDO:</span><span class="tpl"><a href="#about">[02_BIO]</a><a href="#tech">[03_STACK]</a><a href="#quests">[04_LOOT]</a><a href="#contact">[05_SYNC]</a></span></div>
+  </div>
+ </div></div></section>
+
+<!-- 02 ABOUT -->
+<section id="about" class="screen"><div class="box">
+ <div class="head"><span class="tab ytab">ACT II // CHARACTER_LORE</span><h2>STATUS &amp; TRAJETÓRIA DO AVENTUREIRO</h2>
+  <div class="panel chips2"><span><i data-lucide="shield"></i>CLASS: TECH_ALCHEMIST</span><span><i data-lucide="settings" class="lb"></i>ROLE: FULL-CYCLE LEAD</span></div></div>
+ <div class="about-grid"><div>
+   <div class="panel"><div class="tbar flat"><span class="y"><i data-lucide="gamepad-2"></i> PARTY_SLOT_01</span><b><u class="sq pc"></u>ONLINE</b></div>
+    <div class="stage tall"><i class="corner l"></i><i class="corner r"></i><img class="av" src="assets/images/avatar.png" alt="Avatar"><div class="cap"><span>LVL. 99 ARCHITECT</span><span>XP: 994,200</span></div></div>
+    <div class="vit"><div><p><span><i data-lucide="heart" class="y"></i> HP [VITALITY]</span>9,999 / 9,999</p><i class="bar y big"><b style="width:100%"></b></i></div><div><p><span><i data-lucide="zap" class="lb"></i> MP [LOGIC/AI]</span>8,450 / 8,450</p><i class="bar lb big"><b style="width:100%"></b></i></div><div><p><span><i data-lucide="cpu" class="pc"></i> STM [COMPUTE]</span>100% READY</p><i class="bar pc big"><b style="width:100%"></b></i></div></div></div>
+   <div class="panel"><p class="rel"><span class="y"><i data-lucide="package"></i> RELÍQUIAS &amp; INSÍGNIAS</span><b class="y">4 / 4 SLOTS</b></p>
+    <div class="quad q4"><span><i data-lucide="badge-check" class="y"></i>GCP_CERT</span><span><i data-lucide="terminal-square" class="lb"></i>CLEAN_ARCH</span><span><i data-lucide="bot" class="pc"></i>GEN_AI</span><span><i data-lucide="server"></i>DATA_OPS</span></div></div></div>
+  <div>
+   <div class="panel dlg"><span class="tab lbtab"><i data-lucide="messages-square"></i>[ SPEAKER : DEV ]</span><div class="inset txt"><p><span class="lb">&gt;</span> “Olá! Seja bem-vindo à minha base operacional. Minha trajetória é forjada sobre uma sólida fundação em Engenharia de Software, raciocínio lógico analítico e o compromisso inabalável de resolver desafios de alta complexidade computacional.”</p><p><span class="lb">&gt;</span> Construo sistemas que resistem à escala real: unindo o rigor clássico da modelagem backend à agilidade da computação em nuvem, orquestração de dados e inteligência artificial generativa.</p><p class="pa y">PRESS_ANYWHERE_TO_CONTINUE ▼</p></div></div>
+   <div class="panel"><p class="rel big"><span class="ttl"><i data-lucide="bar-chart-3" class="y"></i> ATRIBUTOS &amp; ESPECIALIZAÇÕES</span><small>PASSIVE_TREE: MAXED</small></p><div id="attrs"></div></div>
+   <div class="g2"><div class="panel card2"><h4 class="y"><i data-lucide="file-user"></i> BIOGRAFIA_DO_HERÓI</h4><p>“Desenvolvedor focado em unir a solidez da engenharia de software tradicional ao poder transformador da Inteligência Artificial e da Engenharia de Dados.”</p><small class="y"><i data-lucide="check-square"></i> MISSÃO PRINCIPAL: ESCALAR VALOR</small></div>
+    <div class="panel card2"><h4 class="lb"><i data-lucide="cpu"></i> ESTILO_DE_TRABALHO</h4><p>Clean Code, Arquitetura Limpa, testes automatizados de ponta a ponta e foco intransigente em entregas práticas de valor real para o produto e para o usuário final.</p><small class="lb"><i data-lucide="sparkles"></i> PASSIVA: ZERO DÍVIDA TÉCNICA</small></div></div>
+  </div></div></div></section>
+
+<!-- 03 TECH -->
+<section id="tech" class="screen"><div class="box">
+ <div class="panel thead"><span class="bico"><i data-lucide="shield"></i></span><div class="tt"><small class="y">SYS.MODULE // 03 <span class="tx">• INVENTORY &amp; FORGE</span></small><h2 class="lb">ARSENAL DE HABILIDADES</h2></div>
+  <div class="mini inset"><div><p><span class="mu">TOTAL DE ITENS: </span><b class="y">18 / 18 UNLOCKED</b></p><i class="bar y"><b style="width:100%"></b></i></div><div><p><span class="mu">MASTERY LEVEL: </span><b class="pc">ARCHITECT (LVL.99)</b></p><i class="bar pc"><b style="width:95%"></b></i></div></div><span class="chip dim lb"><u class="sq lb"></u>MANA SYNC: 100%</span></div>
+ <div class="tech-grid"><aside>
+   <div class="panel"><div class="fm"><span class="tab ytab">[MASTER FORGER // LVL.99]</span><small class="y"><i data-lucide="trophy"></i> ID: #0042</small></div>
+    <div class="stage forge"><span class="mtag a"><i data-lucide="wand-sparkles" class="lb"></i>INT: 98</span><span class="mtag b"><i data-lucide="zap" class="y"></i>DEX: 94</span><img class="av" src="assets/images/avatar.png" alt="Avatar"><i class="floor"></i></div>
+    <div class="tele"><p class="y"><i data-lucide="message-square"></i> FORGE MASTER TELEMETRY</p><p>"Bem-vindo ao meu arsenal. Cada ferramenta aqui foi forjada em combate real, desde microsserviços de alta escala até redes autônomas de IA."</p><p class="st"><span class="y">● STATUS: ATIVO</span><span>SLOTS USADOS: 18/18</span></p></div></div>
+   <div class="panel" id="equip"></div></aside>
+  <div><div class="filters" data-t="skills"></div><div class="cards3" id="skills"></div></div></div>
+ <div class="panel conq"><i data-lucide="trophy" class="y big"></i><div><h3>CONQUISTAS DO ARSENAL DESBLOQUEADAS</h3><p>Todas as 18 runas e ferramentas foram testadas e validadas em produção.</p></div><div class="kv inset"><small>XP TOTAL</small><b class="y">174.500</b></div><div class="kv inset"><small>SYNERGY</small><b class="lb">MAX</b></div></div>
+</div></section>
+
+<!-- 04 QUESTS -->
+<section id="quests" class="screen"><div class="box">
+ <div class="zone"><span class="y"><i data-lucide="scan-line"></i> ZONE 04 // WORLD STAGE: DEPLOYMENT SERVER</span><span>QUESTS RESOLVED: 06/06 [100%] <u class="sq yy"></u></span></div>
+ <div class="panel qhero"><div class="qav"><img class="av" src="assets/images/avatar.png" alt="Avatar"><div class="cap2"><span class="y"><i data-lucide="coffee"></i>COFFEE: 98%</span><span class="lb"><i data-lucide="terminal-square"></i>NEOVIM [ACTIVE]</span></div></div>
+  <div><p class="lb ql"><i data-lucide="swords"></i> QUEST LOG &amp; MISSION ARCHIVE</p><h1>PROJETOS EM DESTAQUE</h1><p class="qd">Missões concluídas e sistemas construídos em produção. Navegue pelos artefatos de código, arquiteturas distribuídas e pipelines de alta performance forjados em combate de infraestrutura real.</p>
+   <div class="stats4 inset"><div><small>TOTAL QUESTS</small><b class="pc">06 PROJETOS</b></div><div><small>XP ACCUMULATED</small><b class="lb">+9,000 EXP</b></div><div><small>DEPLOY SUCCESS</small><b class="y">99.98% SLA</b></div><div><small>ARCHITECTURE</small><b>CLOUD READY</b></div></div>
+   <p class="pt">PRESS [TAB] OU ROLAR PARA VISUALIZAR O QUADRO COMPLETO <span class="y">▼</span></p></div></div>
+ <div class="panel fbar"><div class="filters" data-t="projects"></div><span class="y st"><i data-lucide="folder-check" class="pc"></i> STATUS: PRODUCTION_VERIFIED</span></div>
+ <div class="cards3 pr" id="projects"></div>
+ <div class="panel ckp"><span class="bico dim"><i data-lucide="save" class="y"></i></span><div><b class="y">CHECKPOINT RECORDED: ALL 6 ARTIFACTS COMPILED</b><br><small>Pronto para integrar novos épicos, arquiteturas complexas ou pipelines de alto impacto.</small></div><a class="btn blue sm" href="#contact"><i data-lucide="send"></i>PROPOR NOVA MISSÃO / CONTRATO</a></div>
+</div></section>
+
+<!-- 05 CONTACT -->
+<section id="contact" class="screen glow2"><div class="box">
+ <div class="panel chead"><span class="bico"><i data-lucide="mail-plus"></i></span><div><small class="y"><u class="sq yy"></u> ACT_V // FINAL_ENCOUNTER</small><h2>O MENSAGEIRO • POSTO DE COMUNICAÇÃO</h2></div><span class="chip push"><span class="lb">SAVE_SLOT: #05</span> &nbsp;|&nbsp; CHECKPOINT VERIFIED <i data-lucide="check-circle-2" class="pc"></i></span></div>
+ <div class="social">
+  <div class="panel sl"><div class="tbar flat dark"><span class="pc">[ EQUIP: SLOT_L ]</span><i data-lucide="external-link" class="lb"></i></div><a class="scard gh" href="#" data-pending="GitHub" target="_blank" rel="noopener"><span class="sico"><i data-lucide="code-xml"></i></span><b>GITHUB</b><em>REPOSITÓRIOS &amp; CÓDIGO</em><hr><span>github.com/seu-usuario</span></a><p class="sf"><span>+99 COMMITS</span><b class="y">OPEN_SOURCE</b></p></div>
+  <img class="av mx" src="assets/images/avatar-contact.png" alt="Avatar com óculos escuros e casaco longo, segurando duas pílulas">
+  <div class="panel sl"><div class="tbar flat dark"><span class="pc">[ EQUIP: SLOT_R ]</span><i data-lucide="external-link" class="lb"></i></div><a class="scard li" href="#" data-pending="LinkedIn" target="_blank" rel="noopener"><span class="sico"><i data-lucide="share-2"></i></span><b>LINKEDIN</b><em>CONEXÕES &amp; CARREIRA</em><hr><span>linkedin.com/in/seu-perfil</span></a><p class="sf"><span>+500 NETWORK</span><b class="y">HIREABLE</b></p></div>
+ </div>
+ <div class="panel dlg final"><span class="tab ytab">CONVERSAÇÃO // QUEST LOG FINAL</span><h3 class="y"><i data-lucide="flag"></i> MISSÃO COMPLETA! VAMOS CONVERSAR?</h3><p>“Tem um projeto desafiador, uma oportunidade profissional ou quer bater um papo sobre backend, dados ou inteligência artificial? Minha caixa de entrada está sempre aberta!”</p><span class="chip dl">DIRECT_LINK: <span class="lb">dev@email.com</span></span><p class="pa y">▼ PRESS [TAB] PARA TERMINAL</p></div>
+ <form class="panel console" id="form"><div class="tbar flat"><span class="lb"><u class="sq pk"></u><u class="sq yy"></u><u class="sq pc"></u> CONSOLE://MESSENGER_V2.0.4.sh</span><b>TTY1 [UTF-8] ESTABLISHED</b></div>
+  <div class="g2"><label><span class="y"><i data-lucide="user"></i>[NOME DO VIAJANTE]</span><div class="inp"><b class="lb">&gt;</b><input name="n" required placeholder="Digite seu nome ou guilda..."></div></label><label><span class="lb"><i data-lucide="at-sign"></i>[EMAIL DE CONTATO]</span><div class="inp"><b class="lb">&gt;</b><input name="e" type="email" required placeholder="contato@guilda.org..."></div></label></div>
+  <label><span class="pc"><i data-lucide="terminal-square"></i>[MENSAGEM / BRIEFING DA MISSÃO]</span><div class="inp ta"><b class="lb">&gt;</b><textarea name="m" required rows="4" placeholder="Escreva aqui detalhes sobre seu projeto, desafio técnico ou proposta profissional..."></textarea></div></label>
+  <div class="send"><small><u class="sq yy"></u> <span id="stby">STANDBY: AGUARDANDO COMANDO DO JOGADOR</span></small><button class="btn blue big" type="submit"><i data-lucide="send"></i>ENVIAR MENSAGEM (PRESS ENTER)</button></div></form>
+ <div class="info3"><div class="panel"><span class="bico dim"><i data-lucide="mail" class="lb"></i></span><div><small>CANAL PRIMÁRIO</small><b>dev@email.com</b></div></div><div class="panel"><span class="bico dim"><i data-lucide="clock" class="pc"></i></span><div><small>FUSO HORÁRIO</small><b>UTC-3 (SÃO PAULO / BRT)</b></div></div><div class="panel"><span class="bico dim"><i data-lucide="badge-check" class="y"></i></span><div><small>STATUS ATUAL</small><b class="y">DISPONÍVEL P/ PROJETOS</b></div></div></div>
+ <div class="panel saved"><span><i data-lucide="save" class="pc"></i><b class="pc">GAME SAVED</b> • THANKS FOR VISITING</span><span class="mu">PRESS ANY KEY TO CONTINUE &nbsp; <b class="y">★ 100% CLEAR</b></span></div>
+</div></section>
+</main>
+<footer><div class="panel foot"><div><b class="y"><i data-lucide="swords"></i> QUEST LOG COMPLETE // SAVE POINT REGISTERED</b><br><small>© 2026 DEVELOPER PORTFOLIO • PRESS START TO BUILD • CRAFTED WITH PIXELS &amp; CODE</small></div>
+ <div class="fr"><a class="ibtn" href="#" data-pending="GitHub" aria-label="Código"><i data-lucide="code-xml"></i></a><a class="ibtn" href="#" data-pending="Rede" aria-label="Rede"><i data-lucide="share-2"></i></a><a class="btn sm" href="#hero"><i data-lucide="arrow-up"></i>START_POS</a></div></div></footer>
+<script src="js/components.js"></script><script src="js/main.js"></script></body></html>
