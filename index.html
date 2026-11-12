@@ -1,387 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/MyLogo.png" type="image/png">
-
-    <title id="tituloPagina">João Carlos | Data & AI Engineer</title>
-</head>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>João Carlos [DEV] — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"></head>
 <body>
-
-    <header>
-        <img src="./img/logoSenai.png" alt="Logo SENAI" class="logoSenai">
-        <ul>
-            <li><a href="#" id="navHome">Home</a></li>
-            <li><a href="#about" id="navAbout">About</a></li>
-            <li><a href="#works" id="navWorks">Works</a></li>
-            <li><a href="#contact" id="navContact">Contact</a></li>
-        </ul>
-        <div class="areaHeaderDireita">
-            <button class="botaoIdioma" id="botaoIdioma" onclick="alternarIdioma()">PT-BR</button>
-            <img src="./img/logo2RP.png" alt="Logo 2RP Net" class="logo2RP">
-        </div>
-    </header>
-
-    <div class="espacoEmbaixoDoHeader"></div>
-
-    <main class="pg1">
-
-        <section class="ladoTitulo">
-            <p id="saudacaoTopo">Hello, I'm João Carlos,</p>
-            <h1 id="cargoTopo">Data &amp; AI <br> Engineer</h1>
-            <p class="textTT" id="descricaoTopo">Focused on Data Engineering, AI Solutions (Autonomous AI Agents &amp; LLMs), and scalable architectures—transforming complex data into intelligent automation and strategic value.</p>
-            <section class="partezinhaTopo">
-                <a href="#contact"><button id="botaoContatoTopo">Get in touch</button></a>
-                <a href="https://www.linkedin.com/" target="_blank"><div class="iconeLinkedinTopo"><img src="./img/linkedinTopo.png" alt="LinkedIn"></div></a>
-
-                <div class="espacoAncora" id="about"></div>
-
-            </section>
-        </section>
-
-        <section class="ladoFoto">
-            <div class="foto"></div>
-        </section>
-        
-    </main>
-
-    
-
-    <main class="pg2">
-
-        <section class="topoPg2">
-            <h1 id="tituloSobre">About</h1>
-            <div class="tracao"></div>
-        </section>
-
-        <section class="textoSobre">
-
-            <p id="paragrafoSobre">Currently, I work in Data Engineering and AI at 2RP Net, providing specialized services for Banco Digio. In my daily routine, I work on building, analyzing, and processing data pipelines, performing data normalization and transactions in testing environments with PySpark and Databricks, and utilizing the Google Cloud Platform (GCP) ecosystem and BigQuery. Additionally, I design and plan data architectures and develop intelligent process automations powered by Autonomous AI Agents (Google ADK and Gemini/LLMs).
-
-<br><br>
-
-In the academic sphere, I am pursuing a degree in Systems Analysis and Development at SENAI, expanding my expertise in software engineering, Java APIs and backend systems, React frontends, and PostgreSQL relational databases. Prior to my undergraduate studies, I completed a Technical Degree in Systems Development also at SENAI, where I built a solid foundation developing backends with Java and Spring Boot, dynamic frontends using Vanilla JS (HTML, CSS, JavaScript), React, and Next.js, as well as modeling and normalizing relational databases with MySQL.</p>
-
-        </section>
-
-        <section class="boxCards">
-            <section class="tTopo">
-                <h3 id="tituloSkills">Technical Skills</h3>
-            <div class="tracinho"></div>
-            </section>
-            <section class="cardsSkills">
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/python.svg" alt="Python"></div>
-                    <p>Python</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/ai.svg" alt="AI Agents & Gemini"></div>
-                    <p>AI Agents (ADK &amp; Gemini)</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/gcp.svg" alt="BigQuery & GCP"></div>
-                    <p>BigQuery &amp; GCP</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skill5" src="./img/skills/java.png" alt="Java & Spring Boot"></div>
-                    <p>Java &amp; Spring Boot</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/sql.svg" alt="SQL Databases"></div>
-                    <p>SQL (Postgres &amp; MySQL)</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skillIcon" src="./img/skills/react.svg" alt="React"></div>
-                    <p>React &amp; Frontend</p>
-                </div>
-
-                <div class="card">
-                    <div class="imagemSkill"><img class="skill6" src="./img/skills/docker.png" alt="Docker & Git"></div>
-                    <p>Docker &amp; Git</p>
-                </div>
-
-            </section>
-            <div class="espacoAncora" id="works"></div>
-        </section>
-
-
-    </main>
-
-    
-
-    <main class="pg3">
-
-        <section class="topoPg3">
-            <h1 id="tituloWorks">Works</h1>
-        </section>
-
-        <section class="textoSobre2">
-
-            <p id="paragrafoWorks">Throughout my trajectory in Data Engineering, Artificial Intelligence, and Software Development at SENAI, I have developed projects ranging from multi-agent AI systems integrated with cloud data warehouses to RESTful APIs, full-stack applications, and interactive interfaces. Below are some of the main projects from my portfolio.
-            </p>
-            
-        </section>
-
-        <section class="experience">
-
-            <section class="expContainer">
-                
-
-
-                <!--CARD 1: CREDIT RISK MULTI-AGENT-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if1"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard1">Credit &amp; Risk Analysis Multi-Agent</h2>
-                        <p id="descCard1">An intelligent multi-agent AI system built with Google ADK, Python, and BigQuery, designed to act as an automated credit and risk analysis assistant capable of querying analytical data and assisting in financial decision-making.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">Python</div>
-                            <div class="techUtilizada">Google ADK</div>
-                            <div class="techUtilizada">BigQuery</div>
-                            <div class="techUtilizada">AI Agents</div>
-                            <div class="techUtilizada">Gemini LLM</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/credit-risk-multi-agent" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 2: SMART TRAVEL AGENT-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if2"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard2">Smart Travel AI Agent</h2>
-                        <p id="descCard2">An autonomous travel assistant powered by AI Agents and Google ADK (in active development). Designed to provide end-to-end travel planning, including custom itineraries, real-time weather forecasts, hotel recommendations, and flight options.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">Python</div>
-                            <div class="techUtilizada">Google ADK</div>
-                            <div class="techUtilizada">AI Agents</div>
-                            <div class="techUtilizada">LLMs</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/smart-travel-agent" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-                <!--CARD 3: PET MANAGEMENT REST API-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if3"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard3">Pet Management REST API</h2>
-                        <p id="descCard3">A backend management system developed with Java and Spring Boot integrated with a relational MySQL database, applying RESTful API design, data persistence, and layered architecture best practices.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">Java</div>
-                            <div class="techUtilizada">Spring Boot</div>
-                            <div class="techUtilizada">MySQL</div>
-                            <div class="techUtilizada">REST API</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/Pet-Management-RestAPI.git" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 4: REACT COMPONENTS STUDY PLATFORM-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if4"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard4">React Components Study Platform</h2>
-                        <p id="descCard4">An interactive study platform built with React to explore and consolidate core modern frontend concepts, including componentization, state management, props, hooks, and dynamic UI rendering.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">React</div>
-                            <div class="techUtilizada">JavaScript</div>
-                            <div class="techUtilizada">HTML</div>
-                            <div class="techUtilizada">CSS</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/frontend-components-study-screen" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 5: SENAI ARCADE SPACE-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if5"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard5">SENAI Space Arcade Game</h2>
-                        <p id="descCard5">A classic space shooter arcade game developed entirely with Vanilla JavaScript, focusing on programming logic, DOM/Canvas manipulation, collision detection, and real-time event loops.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">JavaScript (Vanilla)</div>
-                            <div class="techUtilizada">HTML5</div>
-                            <div class="techUtilizada">CSS3</div>
-                            <div class="techUtilizada">Game Logic</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/senai-arcade-space-vanilla" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-                <!--CARD 6: CATHOLIC SITE-->
-                
-                <div class="cardExp">
-
-                    <section class="imagemFundoCardExp" id="if6"></section>
-                    
-                    <section class="textosCardExp">
-                        <h2 id="tituloCard6">Catholic Site</h2>
-                        <p id="descCard6">A full-stack web platform under active development that brings together traditional prayers, liturgical readings, and spiritual resources to support and enrich daily faith practice.</p>
-                        <section class="areaTechUtilizadas">
-
-                            <div class="techUtilizada">HTML</div>
-                            <div class="techUtilizada">CSS</div>
-                            <div class="techUtilizada">JavaScript</div>
-                            <div class="techUtilizada">Spring Boot</div>
-                            <div class="techUtilizada">MySQL</div>
-
-                        </section>
-                        <section class="areaBotoesCard">
-
-                            <button class="verProjeto"><a href="https://github.com/JCReis12/catholic-2.0.git" target="_blank" class="linkVerProjeto">View Project</a></button>
-                        
-                        </section>
-                    </section>
-
-                </div>
-
-
-
-
-            </section>
-
-        </section>
-
-    </main>
-
-    <footer id="contact">
-
-        <section class="ladoEsquerdoFooter">
-
-            <div class="boxContato">
-
-                <div class="cardCont" id="cardGit">
-                    <a href="https://github.com/JCReis12" target="_blank">
-                        <div class="imagemFooter" id="i1"><img src="./img/footer/git.png" alt="GitHub"></div>
-                        <h2>GitHub</h2>
-                    </a>
-                </div>
-
-                <div class="cardCont" id="cardLinkedin">
-                    <a href="https://br.linkedin.com/" target="_blank">
-                        <div class="imagemFooter" id="i2"><img src="./img/footer/linkedin.png" alt="LinkedIn"></div>
-                        <h2>LinkedIn</h2>
-                    </a>
-                </div>
-
-                <div class="cardCont" id="cardEmail">
-                    <a href="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox?compose=GTvVlcSHvbPNRfvRLMqXSCDgfwFNgJDvSwFCFKLrwTLWQXRrpLlsBdghXKgwVlQMKdXXcSmnsbfDr" target="_blank">
-                        <div class="imagemFooter" id="i3"><img src="./img/footer/email.png" alt="Email"></div>
-                        <h2>Email</h2>
-                    </a>
-                </div>
-
-                <div class="cardCont" id="cardInsta">
-                    <a href="https://www.instagram.com/jota_c_12/" target="_blank">
-                        <div class="imagemFooter" id="i4"><img src="./img/footer/insta.png" alt="Instagram"></div>
-                        <h2>Instagram</h2>
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="centroFooter">
-            <div class="boxAvatarFooter">
-                <img src="./img/footer/avatar.webp" alt="Avatar João Carlos" class="avatarFooter">
-            </div>
-        </section>
-
-        <section class="ladoDireitoFooter">
-            <h1 id="tituloContatoFooter">Get in touch</h1>
-            <section class="formulario">
-                <label for="nome" id="labelNome">Name:</label>
-                <input type="text" id="nome" placeholder="Enter your name">
-
-                <label for="email" id="labelEmail">E-mail:</label>
-                <input type="email" id="email" placeholder="Enter your e-mail">
-
-                <label for="mensagem" id="labelMensagem">Leave your message:</label>
-                <textarea name="mensagem" id="mensagem" placeholder="Enter your message"></textarea>
-
-                <div class="botaoForm">
-                    <button id="enviar" onclick="enviar()">Send Message</button>
-                </div>
-            </section>
-        </section>
-
-    </footer>
-
-    <script src="./js/script.js"></script>
-    
-</body>
-</html>
+<header class="top"><span class="chip">LVL.99</span>
+ <div class="bars"><div><small>HP</small><i class="bar y"><b style="width:100%"></b></i></div><div><small>MP</small><i class="bar b"><b style="width:100%"></b></i></div></div>
+ <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+ <nav id="nav"><a href="#hero">01_HERO</a><a href="#about">02_ABOUT</a><a href="#tech">03_TECH</a><a href="#quests">04_QUESTS</a><a href="#contact">05_CONTACT</a></nav>
+ <a class="btn blue sm" href="#contact">TRANSMIT</a></header>
+
+<main>
+<section id="hero" class="wrap">
+ <div class="status"><span class="chip">WORLD_STATE: ONLINE</span><span class="chip y">SERVER: SA-EAST-1 // PROD</span><span class="chip y">LATENCY: 12ms (OPTIMAL)</span><span class="chip y r">LVL 99 SENIOR ARCHITECT</span></div>
+ <div class="grid2">
+  <div>
+   <div class="panel dlg"><span class="tag">NPC_HOST // DIALOGUE_01</span>
+    <p class="y">&gt; OLÁ, VIAJANTE! BEM-VINDO AO MEU UNIVERSO DIGITAL.</p>
+    <h1>JOÃO CARLOS <em>[DEV]</em></h1>
+    <p class="roles"><span>DATA &amp; AI AGENTS</span><span>BACKEND</span><span>FULLSTACK</span></p>
+    <p class="quote">“Transformando lógica pura em mundos digitais e arquiteturas de alta escalabilidade. Construindo infraestruturas robustas, pixel a pixel, commit a commit.”</p>
+    <div class="log"><b>QUEST LOG ATUAL:</b><br>[STATUS: ATIVO] Aberto a novos desafios, projetos estratégicos &amp; liderança de engenharia.</div>
+   </div>
+   <div class="cta"><a class="btn blue" href="#quests">EXPLORAR PROJETOS (START)</a><a class="btn" href="#about">MINHA JORNADA (SELECT)</a></div>
+   <div class="stats"><div>EXP TOTAL<b class="lb">+5 ANOS</b></div><div>DEPLOYS<b class="or">250+ RAIDS</b></div><div>MANA EFFICIENCY<b class="y">99.98% SLA</b></div></div>
+  </div>
+  <div class="panel scene"><div class="titlebar"><span>BATTLESTATION_ROOM.BIN</span><span class="y">16-BIT REALM</span></div>
+   <div class="stage"><img class="avatar" src="assets/images/avatar.png" alt="Avatar pixel art de João Carlos"><span class="bubble">“WELCOME! VAMOS CONSTRUIR?”</span><span class="xp">⚡ +1250 XP/HR</span></div>
+   <div class="chips4"><span>K8S / DOCKER</span><span>LLM AGENTS</span><span>POSTGRES / MYSQL</span><span>RUST / GO / TS</span></div>
+   <div class="tp">TELEPORTE RÁPIDO: <a href="#about">[02_BIO]</a><a href="#tech">[03_STACK]</a><a href="#quests">[04_LOOT]</a><a href="#contact">[05_SYNC]</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="about" class="wrap">
+ <h2><span class="tag y2">ACT II // CHARACTER_LORE</span> STATUS &amp; TRAJETÓRIA DO AVENTUREIRO</h2>
+ <div class="grid3">
+  <div class="panel"><div class="titlebar"><span>PARTY_SLOT_01</span><span class="o">ONLINE</span></div>
+   <img class="avatar" src="assets/images/avatar.png" alt="Avatar"><p class="cap">LVL. 99 ARCHITECT · XP: 994,200</p>
+   <div class="vit"><p>HP [VITALITY] <span>9,999 / 9,999</span></p><i class="bar y"><b style="width:100%"></b></i><p>MP [LOGIC/AI] <span>8,450 / 8,450</span></p><i class="bar b"><b style="width:100%"></b></i><p>STM [COMPUTE] <span>100% READY</span></p><i class="bar o"><b style="width:100%"></b></i></div>
+   <p class="mini">RELÍQUIAS &amp; INSÍGNIAS — 4 / 4 SLOTS</p><div class="chips4"><span>GCP_CERT</span><span>CLEAN_ARCH</span><span>GEN_AI</span><span>DATA_OPS</span></div></div>
+  <div>
+   <div class="panel dlg"><span class="tag">[ SPEAKER : DEV ]</span><p>&gt; Olá! Seja bem-vindo à minha base operacional. Minha trajetória é forjada sobre uma sólida fundação em Engenharia de Software, raciocínio lógico analítico e o compromisso inabalável de resolver desafios de alta complexidade computacional.”</p><p>&gt; Construo sistemas que resistem à escala real: unindo o rigor clássico da modelagem backend à agilidade da computação em nuvem, orquestração de dados e inteligência artificial generativa.</p></div>
+   <div class="panel"><h3>ATRIBUTOS &amp; ESPECIALIZAÇÕES <small>PASSIVE_TREE: MAXED</small></h3><div id="attrs"></div></div>
+   <div class="grid2e"><div class="panel"><h4>BIOGRAFIA_DO_HERÓI</h4><p>“Desenvolvedor focado em unir a solidez da engenharia de software tradicional ao poder transformador da Inteligência Artificial e da Engenharia de Dados.”</p><small class="y">MISSÃO PRINCIPAL: ESCALAR VALOR</small></div>
+   <div class="panel"><h4 class="lb">ESTILO_DE_TRABALHO</h4><p>Clean Code, Arquitetura Limpa, testes automatizados de ponta a ponta e foco intransigente em entregas práticas de valor real para o produto e para o usuário final.</p><small class="lb">PASSIVA: ZERO DÍVIDA TÉCNICA</small></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="tech" class="wrap">
+ <h2><span class="tag lbt">SYS_MODULE // 03 · INVENTORY &amp; POWER</span> ARSENAL DE HABILIDADES</h2>
+ <div class="filters" data-target="skills"></div><div class="cards" id="skills"></div>
+ <div class="panel foot">🏆 <b>CONQUISTAS DO ARSENAL DESBLOQUEADAS</b> — Todas as 18 runas e ferramentas foram testadas e validadas em produção. <span class="chip">XP TOTAL 174.500</span><span class="chip lbc">SYNERGY MAX</span></div>
+</section>
+
+<section id="quests" class="wrap">
+ <h2><span class="tag y2">QUEST LOG &amp; MISSION ARCHIVE</span> PROJETOS EM DESTAQUE</h2>
+ <p>Missões concluídas e sistemas construídos em produção. Navegue pelos artefatos de código, arquiteturas distribuídas e pipelines de alta performance forjados em combate de infraestrutura real.</p>
+ <div class="stats4"><div>TOTAL QUESTS<b>06 PROJETOS</b></div><div>XP ACCUMULATED<b class="y">+9,000 EXP</b></div><div>DEPLOY SUCCESS<b class="y">99.98% SLA</b></div><div>ARCHITECTURE<b>CLOUD READY</b></div></div>
+ <div class="filters" data-target="projects"></div><div class="cards c3" id="projects"></div>
+ <div class="panel foot">CHECKPOINT RECORDED: ALL 6 ARTIFACTS COMPILED <a class="btn blue sm" href="#contact">PROPOR NOVA MISSÃO / CONTRATO</a></div>
+</section>
+
+<section id="contact" class="wrap">
+ <h2><span class="tag y2">ACT V // FINAL_ENCOUNTER</span> O MENSAGEIRO • POSTO DE COMUNICAÇÃO</h2>
+ <div class="social"><a class="panel gh" href="#" data-pending="GitHub" target="_blank" rel="noopener"><b>GITHUB</b><small>REPOSITÓRIOS &amp; CÓDIGO</small><span>github.com/seu-usuario</span></a>
+  <img class="avatar" src="assets/images/avatar-contact.png" alt="Avatar com óculos escuros e casaco longo">
+  <a class="panel li" href="#" data-pending="LinkedIn" target="_blank" rel="noopener"><b>LINKEDIN</b><small>CONEXÕES &amp; CARREIRA</small><span>linkedin.com/in/seu-perfil</span></a></div>
+ <div class="panel dlg"><span class="tag y2">CONVERSA // QUEST LOG FINAL</span><h3 class="y">MISSÃO COMPLETA! VAMOS CONVERSAR?</h3><p>“Tem um projeto desafiador, uma oportunidade profissional ou quer bater um papo sobre backend, dados ou inteligência artificial? Minha caixa de entrada está sempre aberta!”</p><span class="chip">DIRECT_LINK: dev@email.com</span></div>
+ <form class="panel" id="form"><div class="titlebar"><span>CONSOLE://MESSENGER_V2.0.4.sh</span><span>TTY1 [UTF-8] ESTABLISHED</span></div>
+  <div class="grid2e"><label>[NOME DO VIAJANTE]<input name="n" required placeholder="> Digite seu nome ou guilda..."></label><label>[EMAIL DE CONTATO]<input name="e" type="email" required placeholder="> contato@guilda.org..."></label></div>
+  <label>[MENSAGEM / BRIEFING DA MISSÃO]<textarea name="m" required rows="5" placeholder="> Escreva aqui detalhes sobre seu projeto, desafio técnico ou proposta profissional..."></textarea></label>
+  <div class="send"><small id="stby" class="y">STANDBY: AGUARDANDO COMANDO DO JOGADOR</small><button class="btn blue" type="submit">ENVIAR MENSAGEM (PRESS ENTER)</button></div></form>
+ <div class="stats"><div>CANAL PRIMÁRIO<b>dev@email.com</b></div><div>FUSO HORÁRIO<b>UTC-3 (SÃO PAULO / BRT)</b></div><div>STATUS ATUAL<b class="y">DISPONÍVEL P/ PROJETOS</b></div></div>
+</section>
+</main>
+<footer class="wrap panel foot"><div>✕ QUEST LOG COMPLETE // SAVE POINT REGISTERED<br><small>© 2026 DEVELOPER PORTFOLIO • PRESS START TO BUILD • CRAFTED WITH PIXELS &amp; CODE</small></div><a class="btn sm" href="#hero">START_POS</a></footer>
+<script src="js/components.js"></script><script src="js/main.js"></script></body></html>
