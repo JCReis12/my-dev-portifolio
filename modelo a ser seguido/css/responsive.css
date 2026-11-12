@@ -1,2 +1,0 @@
-@media(max-width:900px){.grid2,.grid3,.grid2e,.social{grid-template-columns:1fr}.bars{display:none}.burger{display:block}
- nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column}nav.open{display:flex}h1{font-size:26px}h2{font-size:19px}.status .r{margin-left:0}}
